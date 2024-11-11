@@ -26,20 +26,17 @@ const Home = () => {
     if (res?.data?.status === "Success") {
       const Token = res?.data?.data?.token;
       const userData = jwt(Token);
-      console.log(userData);
       let Vals = Object?.values(userData);
       const UserId = Vals[1];
       const resLogin = await axios.get(
         `http://localhost:4004/api/login/${UserId}`
       );
-      console.log(resLogin);
       sessionStorage.setItem("userName", userData?.iss);
       sessionStorage.setItem("userId", UserId);
       sessionStorage.setItem("token", res?.data?.data?.token);
       navigate(`/home`);
       setRedirect(true);
     }
-    console.log(res);
   };
 
   return (

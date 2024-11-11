@@ -8,6 +8,7 @@ const setupSocket = (server: any) => {
       methods: ["GET", "POST"],
     },
   });
+
   io.on("connection", (socket) => {
     socket.on("join_room", (roomId) => {
       socket.join(roomId);
@@ -17,15 +18,13 @@ const setupSocket = (server: any) => {
     socket.on("join_home", (userId) => {
       if (!onlineUsers.includes(userId)) {
         onlineUsers.push(userId);
-        console.log(
-          `gggggggggggggggggg${onlineUsers} ${userId} joined the home dashboard`
-        );
       }
       io.emit("update_online_user", onlineUsers);
 
       socket.on("disconnect", () => {
         onlineUsers = onlineUsers.filter((user: any) => user !== userId);
         io.emit("update_online_users", onlineUsers);
+        console.log(onlineUsers);
       });
     });
 
@@ -40,13 +39,13 @@ const setupSocket = (server: any) => {
         userId: MsgData.userId,
         message: MsgData.title,
       });
-      // ارسال پیام به دیگر کاربران
-      //   socket.broadcast.emit("receive_message", {
-      //     id: socket.id,
-      //     userId: MsgData.userId,
-      //     message: MsgData.title,
-      //   });
-      // });
+      //   // ارسال پیام به دیگر کاربران
+      //   //   socket.broadcast.emit("receive_message", {
+      //   //     id: socket.id,
+      //   //     userId: MsgData.userId,
+      //   //     message: MsgData.title,
+      //   //   });
+      //   // });
     });
 
     socket.on("disconnect", () => {
