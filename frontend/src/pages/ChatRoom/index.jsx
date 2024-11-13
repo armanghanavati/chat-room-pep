@@ -21,7 +21,6 @@ const ChatRoom = ({ allGp, setRoomItem }) => {
       {/* <div>
                 <span className="border p-2 mt-5">گروهی وجود ندارد</span>
               </div> */}
-
       <Col xl="12" className="my-2 rounded-2 d-flex justify-content-center">
         <Row>
           {allGp?.map((item) => (

@@ -4,14 +4,17 @@ const OnlineUsersContext = createContext();
 
 const OnlineUsersProvider = ({ children }) => {
   const [onlineUsers, setOnlineUsers] = useState([]);
+  const [userInfo, setUserInfo] = useState({});
 
   return (
-    <OnlineUsersContext.Provider value={{ onlineUsers, setOnlineUsers }}>
+    <OnlineUsersContext.Provider
+      value={{ onlineUsers, setOnlineUsers, userInfo, setUserInfo }}
+    >
       {children}
     </OnlineUsersContext.Provider>
   );
 };
 
-const useOnlineUsers = () => useContext(OnlineUsersContext);
+const useContextApi = () => useContext(OnlineUsersContext);
 
-export { OnlineUsersProvider, useOnlineUsers };
+export { OnlineUsersProvider, useContextApi };

@@ -4,10 +4,11 @@ import { Button, Card, Container, Form } from "react-bootstrap";
 import axios from "axios";
 import jwt from "jwt-decode";
 import { useNavigate } from "react-router-dom";
+import { useContextApi } from "../../context";
 
 const Home = () => {
   const navigate = useNavigate();
-
+  const { setUserInfo } = useContextApi();
   const [redirect, setRedirect] = useState(false);
   const [inputs, setInputs] = useState({
     userName: "",
@@ -20,14 +21,17 @@ const Home = () => {
       password: inputs?.password,
     };
     const res = await axios.post(
-      `https://pepapi.minoomart.ir/api/User/authUser`,
+      // `https://pepapi.minoomart.ir/api/User/authUser`,
+      `http://172.16.1.40:2923/api/User/authUser`,
       postData
     );
     if (res?.data?.status === "Success") {
       const Token = res?.data?.data?.token;
       const userData = jwt(Token);
       let Vals = Object?.values(userData);
+      console.log(Vals);
       const UserId = Vals[1];
+      setUserInfo(res?.data?.data);
       const resLogin = await axios.get(
         `http://localhost:4004/api/login/${UserId}`
       );

@@ -10,6 +10,9 @@ import {
 import { EditGroupSchema } from "../../validators/Group";
 import { date } from "zod";
 import { group } from "console";
+import formidable from "formidable";
+import path from "path";
+import fs from "fs";
 
 const postGroup = async (req: Request, res: Response): Promise<void> => {
   const { name } = req.body;
@@ -79,4 +82,34 @@ const deleteGroup = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
-export { postGroup, getAllGroup, getGroup, editGroup, deleteGroup };
+const uploadsDir = path.join(__dirname, "testUpload");
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir);
+}
+const uploadFile = async (req: Request, res: Response) => {
+  try {
+    const form = formidable({
+      uploadDir: uploadsDir,
+      keepExtensions: true,
+      maxFields: 5,
+      maxFieldsSize: 100 * 1024 * 1024,
+    });
+
+    form.parse(req, (err, fields, files): any => {
+      if (err) {
+        return res.status(400).json({ error: err.message });
+      }
+
+      res.status(StatusCodes.ACCEPTED).json({
+        message: "File uploaded successfully",
+        files: files,
+      });
+    });
+
+    console.log(form);
+  } catch (error) {
+    res.status(500).json({ msg: error });
+  }
+};
+
+export { postGroup, getAllGroup, getGroup, editGroup, deleteGroup, uploadFile };

@@ -3,8 +3,6 @@ import { PrismaClient } from "@prisma/client";
 
 const PC = new PrismaClient();
 
-const connectionString = `${process.env.DATABASE_URL}`;
-
 const getGroupService = async (id: number) => {
   return await PC.group.findFirst({
     where: { id },
@@ -28,8 +26,6 @@ const getAllgroupService = async () => {
 };
 
 const postGroupService = async (payload: string) => {
-  console.log(payload);
-
   const group = await PC.group.create({
     data: {
       name: payload,

@@ -1,4 +1,5 @@
 import { Server } from "socket.io";
+import { postMessagesService } from "../../services/Chats";
 
 const setupSocket = (server: any) => {
   let onlineUsers: any = [];
@@ -28,31 +29,35 @@ const setupSocket = (server: any) => {
       });
     });
 
-    socket.on("send_message", (MsgData) => {
-      socket.to(MsgData.roomId).emit("receive_message", {
-        id: socket.id,
-        userId: MsgData.userId,
-        message: MsgData.title,
-      });
-      socket.emit("recive_message", {
-        id: socket.id,
-        userId: MsgData.userId,
-        message: MsgData.title,
-      });
-      //   // ارسال پیام به دیگر کاربران
-      //   //   socket.broadcast.emit("receive_message", {
-      //   //     id: socket.id,
-      //   //     userId: MsgData.userId,
-      //   //     message: MsgData.title,
-      //   //   });
-      //   // });
+    socket.on("send_message", async (MsgData) => {
+      console.log("MsgData", MsgData);
+
+      // روم
+      // socket.to(MsgData.roomId).emit("receive_message", savedMessage);
+      // socket.to(MsgData.roomId).emit("receive_message", {
+      //   id: socket.id,
+      //   userId: MsgData.userId,
+      //   message: MsgData.title,
+      //   time: MsgData.time,
+      // });
+      // socket.emit("recive_message", {
+      //   id: socket.id,
+      //   userId: MsgData.userId,
+      //   userName: MsgData.userName,
+      //   message: MsgData.title,
+      //   time: MsgData.time,
+      // });
+
+      const savedMessage = await postMessagesService(MsgData);
+      // ارسال پیام به دیگر کاربران
+      socket.broadcast.emit("receive_message", savedMessage);
+      // socket.emit("receive_message", savedMessage); // گزینه برای ارسال به خود فرستنده
     });
 
     socket.on("disconnect", () => {
       console.log("User disconnected:", socket.id);
     });
   });
-
   return io;
 };
 

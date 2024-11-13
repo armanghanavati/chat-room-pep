@@ -5,8 +5,30 @@ body * {
   box-sizing: border-box;
 }
 
-.countainer_chat{
+.cursorPointer{
+  cursor: pointer;
+}
+
+.countainer_fields{
   position: fixed;
-  bottom: 20px;
-  right: 8%;
+  bottom: 0px;
+  right: 25%
+}
+
+.font15{
+  font-size: 15px;
+}
+
+.font20{
+  font-size: 20px;
+}
+
+.h_messages{
+  height: calc(100vh - 90px);
+}
+
+.border_chat{
+  border-top: 1px solid rgb(216, 212, 212);;
+  border-left: 1px solid rgb(216, 212, 212);
+  border-right: 1px solid rgb(216, 212, 212);;
 }

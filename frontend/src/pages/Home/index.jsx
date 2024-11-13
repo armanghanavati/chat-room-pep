@@ -3,10 +3,10 @@ import ChatRoom from "../ChatRoom";
 import { Col, Container, Row } from "react-bootstrap";
 import axios from "axios";
 import { io } from "socket.io-client";
-import { useOnlineUsers } from "../../context";
+import { useContextApi } from "../../context";
 
 const index = () => {
-  const { onlineUsers, setOnlineUsers } = useOnlineUsers();
+  const { onlineUsers, setOnlineUsers } = useContextApi();
   const [allGp, setAllGp] = useState([]);
   const [roomItem, setRoomItem] = useState("");
   const getUserId = sessionStorage.getItem("userId");
