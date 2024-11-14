@@ -13,6 +13,7 @@ import { group } from "console";
 import formidable from "formidable";
 import path from "path";
 import fs from "fs";
+import { getMessagesService } from "../../services/Chats";
 
 const postGroup = async (req: Request, res: Response): Promise<void> => {
   const { name } = req.body;
@@ -112,4 +113,21 @@ const uploadFile = async (req: Request, res: Response) => {
   }
 };
 
-export { postGroup, getAllGroup, getGroup, editGroup, deleteGroup, uploadFile };
+const getAllMessages = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const allMessages = await getMessagesService();
+    res.status(200).json({ data: allMessages, code: 0 });
+  } catch (error) {
+    res.status(500).json({ error, code: 1 });
+  }
+};
+
+export {
+  postGroup,
+  getAllGroup,
+  getGroup,
+  editGroup,
+  deleteGroup,
+  uploadFile,
+  getAllMessages,
+};

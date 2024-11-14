@@ -3,7 +3,7 @@ import express from "express";
 import http from "http";
 import cors from "cors";
 import getAllRouter from "./routes";
-import setupSocket from "./middleware/socket-io";
+import setupSocket from "./controller/socket-io/index";
 
 const app = express();
 const server = http.createServer(app);

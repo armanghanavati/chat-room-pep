@@ -16,24 +16,24 @@ async function testConnection() {
 testConnection();
 
 // generator client {
-//     provider = "prisma-client-js"
-//   }
+//   provider = "prisma-client-js"
+// }
 
-//   datasource db {
-//     provider = "sqlserver"
-//     url      = env("DATABASE_URL")
-//   }
+// datasource db {
+//   provider = "sqlserver"
+//   url      = env("DATABASE_URL")
+// }
 
-//   model Group {
-//     id   Int    @id @default(autoincrement())
-//     name String
-//   }
+// model Group {
+//   id   Int    @id @default(autoincrement())
+//   name String
+// }
 
-//   model Message {
-//     id        Int      @id @default(autoincrement())
-//     userId    String
-//     userName  String
-//     content   String
-//     timestamp DateTime @default(now())
-//     roomId    String
-//   }
+// model Message {
+//   id        Int      @id @default(autoincrement())
+//   userId    String
+//   userName  String
+//   content   String
+//   timestamp DateTime @default(now())
+//   roomId    String
+// }

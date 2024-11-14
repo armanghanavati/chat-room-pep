@@ -34,3 +34,27 @@ connection()
   .catch((error) => {
     console.error("Error connecting to database:", error);
   });
+
+export default connection;
+
+// import { PrismaClient } from "@prisma/client";
+
+// const prisma = new PrismaClient();
+
+// const initializeDatabase = async () => {
+//   try {
+//     await prisma.$connect();
+//     console.log("Connected to db . . . ");
+//   } catch (error) {
+//     console.error("Failed to connect to db:", error);
+//     throw error;
+//   }
+// };
+
+// initializeDatabase()
+//   .then(() => {
+//     console.log("Database connection established:");
+//   })
+//   .catch((error) => {
+//     console.error("Error connecting to database:", error);
+//   });

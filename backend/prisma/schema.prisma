@@ -9,6 +9,20 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlserver"
   url      = env("DATABASE_URL")
+}
+
+model Group {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  userId    String
+  userName  String
+  content   String
+  timestamp DateTime @default(now())
+  roomId    String
 }
