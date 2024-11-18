@@ -1,6 +1,7 @@
 import Messages from "../entities/messages/Messages";
 import { DataSource } from "typeorm";
 import Group from "../entities/room";
+import Mentions from "../entities/mentions";
 
 export const connection = async () => {
   const pool = new DataSource({
@@ -9,7 +10,7 @@ export const connection = async () => {
     username: "sa",
     password: "P@yv@nd123",
     database: "pepDB",
-    entities: [Messages, Group],
+    entities: [Messages, Group, Mentions],
     // entities: [__dirname + "/**/*.entity{.ts,.js}"],
     synchronize: true,
     options: {

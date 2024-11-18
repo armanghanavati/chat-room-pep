@@ -33,22 +33,22 @@ const setupSocket = (server: any) => {
     socket.on("send_message", async (MsgData) => {
       const savedMessage = await postMessagesService(MsgData);
 
-      // به کلاینت‌های دیگر پیام ارسال می‌شود
       socket.broadcast.emit("receive_message", {
         id: savedMessage.id,
         userId: MsgData.userId,
         time: MsgData.time,
         userName: MsgData.userName,
         message: MsgData.title,
+        recieverId: MsgData.recieverId,
       });
 
-      // اگر می‌خواهید فرستنده پیام را نیز مطلع کنید:
       socket.emit("receive_message", {
         id: savedMessage.id,
         userId: MsgData.userId,
         time: MsgData.time,
         userName: MsgData.userName,
         message: MsgData.title,
+        recieverId: MsgData.recieverId,
       });
     });
 

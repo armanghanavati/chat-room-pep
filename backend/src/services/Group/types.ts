@@ -1,5 +1,5 @@
 export interface GroupType {
   usersId: number;
-  recieverId: number;
+  recieverId: any;
   groupName: string;
 }

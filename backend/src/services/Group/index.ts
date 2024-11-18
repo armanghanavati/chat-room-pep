@@ -33,6 +33,7 @@ const postGroupService = async (payload: GroupType) => {
       recieverId: payload.recieverId,
       groupName: payload.groupName,
     });
+
     await connectedDB.getRepository(Group).save(newGroup);
     return newGroup;
   } catch (error) {

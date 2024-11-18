@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch ./**/*.ts ./src/index.ts",
+    "start": "nodemon --watch ./**/*.ts ./src/index.ts",
     "generate": "",
     "migrate": "",
     "studio": ""

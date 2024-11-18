@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { postGroup, getAllGroup } from "src/controller/groupControl";
+import { postGroup, getAllGroup } from "../../controller/groupControl";
 
 const router = Router();
 

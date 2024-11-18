@@ -4,12 +4,13 @@ import { postGroupService } from "../../services/Group";
 import { EditGroupSchema } from "./groupValid";
 import { CustomErrorApi } from "../../error";
 import { z } from "zod";
-import asyncWrapper from "src/middleware/asyncWrapper";
+import asyncWrapper from "../../middleware/asyncWrapper";
 
 const postGroup = asyncWrapper(
   async (req: Request, res: Response): Promise<void> => {
-    const validatedData = EditGroupSchema.parse(req.body);
-    const { groupName, usersId, recieverId } = validatedData;
+    // const validatedData = EditGroupSchema.parse(req.body);
+    // const { groupName, usersId, recieverId } = validatedData;
+    const { groupName, usersId, recieverId } = req.body;
 
     const group = await postGroupService({ groupName, usersId, recieverId });
     res.status(StatusCodes.CREATED).json({ data: group, code: 0 });

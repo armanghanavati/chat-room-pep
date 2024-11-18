@@ -1,16 +1,20 @@
 import { PrismaClient } from "@prisma/client";
 import Messages from "../../entities/messages/Messages";
 import connection from "../../db";
+import Mentions from "../../entities/mentions";
 
 const postMessagesService = async (messageData: any) => {
   try {
     console.log(messageData);
     const connectedDB = await connection();
+    const fixRecieverId = messageData.recieverId.map((id: number) => id);
+
     const newMessage = connectedDB.getRepository(Messages).create({
       userId: messageData.userId,
       userName: messageData.userName,
       title: messageData.title,
-      // content: messageData.content,
+      recieverId: fixRecieverId,
+      // newMessage.setRecieverIds([15, 10, 9]);
       // roomId: "1",
     });
 
@@ -33,6 +37,35 @@ export const getMessagesService = async () => {
     console.error("Error saving message to database:", error);
     throw error;
   }
+};
+
+export const postMessageWithUsersService = async (payload: any) => {
+  // if (
+  //   !payload.recieverId ||
+  //   !Array.isArray(payload.recieverId) ||
+  //   payload.recieverId.length === 0
+  // ) {
+  //   throw new Error("recieverId must be a non-empty array.");
+  // }
+  const connectedDB = await connection();
+  const fixRecieverId = payload.recieverId.map((id: number) => id);
+
+  const newMessage = connectedDB.getRepository(Messages).create({
+    userId: payload.userId,
+    userName: payload.userName,
+    title: payload.title,
+    recieverId: fixRecieverId,
+    // newMessage.setRecieverIds([15, 10, 9]);
+    // roomId: "1",
+  });
+
+  // const mentions: Mentions[] = payload.recieverId.map((id: number) => {
+  //   return mentionsRepository.create({
+  //     recieverId: id,
+  //   });
+  // });
+  await connectedDB.getRepository(Messages).save(newMessage);
+  return newMessage;
 };
 
 // const PC = new PrismaClient();

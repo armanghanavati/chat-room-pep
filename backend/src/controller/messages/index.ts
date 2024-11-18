@@ -7,7 +7,11 @@ import { group } from "console";
 import formidable from "formidable";
 import path from "path";
 import fs from "fs";
-import { getMessagesService } from "../../services/Chats";
+import {
+  getMessagesService,
+  postMessageWithUsersService,
+} from "../../services/Chats";
+import asyncWrapper from "../../middleware/asyncWrapper";
 
 const uploadsDir = path.join(__dirname, "testUpload");
 if (!fs.existsSync(uploadsDir)) {
@@ -47,4 +51,33 @@ const getAllMessages = async (req: Request, res: Response): Promise<void> => {
   }
 };
 
-export { uploadFile, getAllMessages };
+const postMessageWithUsers = async (
+  req: Request,
+  res: Response
+): Promise<any> => {
+  console.log("Request Body:", req.body); // چاپ بدنه درخواست
+  const { userId, recieverId, userName, title } = req.body;
+
+  try {
+    // بررسی ورودی
+    if (!recieverId || !Array.isArray(recieverId) || recieverId.length === 0) {
+      res.status(StatusCodes.BAD_REQUEST).json({
+        message: "recieverId is required and should be a non-empty array",
+      });
+    }
+
+    const userMentions = await postMessageWithUsersService({
+      userId,
+      recieverId,
+      userName,
+      title,
+    });
+    res.status(StatusCodes.CREATED).json({ data: userMentions, code: 0 });
+  } catch (error) {
+    res
+      .status(StatusCodes.INTERNAL_SERVER_ERROR)
+      .json({ message: error.message });
+  }
+};
+
+export { uploadFile, getAllMessages, postMessageWithUsers };
