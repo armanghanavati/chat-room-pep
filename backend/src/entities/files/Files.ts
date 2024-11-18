@@ -1,7 +1,6 @@
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-import { nullable } from "zod";
 
-@Entity("chat-message")
+@Entity("file")
 export default class Messages extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number | null;
@@ -15,11 +14,8 @@ export default class Messages extends BaseEntity {
   @Column()
   userName: string;
 
-  @Column()
-  roomId: string;
-
-  @Column({ type: "int", nullable: true })
-  receiveId: number | null;
+  // @Column()
+  // content: string;
 
   @Column({ type: "datetime", default: () => "CURRENT_TIMESTAMP" })
   time: Date;

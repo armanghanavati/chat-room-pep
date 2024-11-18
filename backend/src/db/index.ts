@@ -1,5 +1,6 @@
 import Messages from "../entities/messages/Messages";
 import { DataSource } from "typeorm";
+import Group from "../entities/room";
 
 export const connection = async () => {
   const pool = new DataSource({
@@ -7,8 +8,8 @@ export const connection = async () => {
     host: "coappweb",
     username: "sa",
     password: "P@yv@nd123",
-    database: "ghana",
-    entities: [Messages],
+    database: "pepDB",
+    entities: [Messages, Group],
     // entities: [__dirname + "/**/*.entity{.ts,.js}"],
     synchronize: true,
     options: {

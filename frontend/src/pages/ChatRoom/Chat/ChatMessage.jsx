@@ -21,8 +21,6 @@ const ChatMessage = () => {
   const titleInputRef = useRef(null);
   const socket = io("http://localhost:4004");
 
-  console.log(userInfo);
-
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };

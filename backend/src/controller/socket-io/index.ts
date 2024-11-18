@@ -3,6 +3,7 @@ import { postMessagesService, getMessagesService } from "../../services/Chats";
 
 const setupSocket = (server: any) => {
   let onlineUsers: any = [];
+  let isMessageSend = false;
   const io = new Server(server, {
     cors: {
       origin: "*",
@@ -24,9 +25,25 @@ const setupSocket = (server: any) => {
       });
     });
 
+    socket.on("join_room", (roomId) => {
+      socket.join(roomId);
+      console.log(`User joined room ${roomId}`);
+    });
+
     socket.on("send_message", async (MsgData) => {
       const savedMessage = await postMessagesService(MsgData);
+
+      // به کلاینت‌های دیگر پیام ارسال می‌شود
       socket.broadcast.emit("receive_message", {
+        id: savedMessage.id,
+        userId: MsgData.userId,
+        time: MsgData.time,
+        userName: MsgData.userName,
+        message: MsgData.title,
+      });
+
+      // اگر می‌خواهید فرستنده پیام را نیز مطلع کنید:
+      socket.emit("receive_message", {
         id: savedMessage.id,
         userId: MsgData.userId,
         time: MsgData.time,
@@ -48,8 +65,3 @@ const setupSocket = (server: any) => {
 };
 
 export default setupSocket;
-
-// socket.on("join_room", (roomId) => {
-//   socket.join(roomId);
-//   console.log(`User joined room ${roomId}`);
-// });

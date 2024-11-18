@@ -4,9 +4,8 @@ import connection from "../../db";
 
 const postMessagesService = async (messageData: any) => {
   try {
+    console.log(messageData);
     const connectedDB = await connection();
-    console.log("Serrrrrrvice : messageData", messageData);
-
     const newMessage = connectedDB.getRepository(Messages).create({
       userId: messageData.userId,
       userName: messageData.userName,
@@ -19,15 +18,21 @@ const postMessagesService = async (messageData: any) => {
     return newMessage;
   } catch (error) {
     console.error("Error saving message to database:", error);
+
     throw error;
   }
 };
 
 export const getMessagesService = async () => {
-  const connectedDB = await connection();
-  const messageRepo = connectedDB.getRepository(Messages);
-  const messages = await messageRepo.find();
-  return messages; // تمام پیام‌ها را برمی‌گردانیم
+  try {
+    const connectedDB = await connection();
+    const messageRepo = connectedDB.getRepository(Messages);
+    const messages = await messageRepo.find();
+    return messages;
+  } catch (error) {
+    console.error("Error saving message to database:", error);
+    throw error;
+  }
 };
 
 // const PC = new PrismaClient();
