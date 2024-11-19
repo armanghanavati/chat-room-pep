@@ -52,10 +52,12 @@ const setupSocket = (server: any) => {
       });
     });
 
-    socket.on("request_chat_history", async () => {
-      const chatHistory = await getMessagesService();
-      socket.emit("chat_history", chatHistory);
-    });
+    // socket.on("request_chat_history", async () => {
+    //   const fixId = MsgData.userId;
+
+    //   const chatHistory = await getMessagesService();
+    //   socket.emit("chat_history", chatHistory);
+    // });
 
     socket.on("disconnect", () => {
       console.log("User disconnected:", socket.id);

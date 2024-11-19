@@ -44,7 +44,9 @@ const uploadFile = async (req: Request, res: Response) => {
 
 const getAllMessages = async (req: Request, res: Response): Promise<void> => {
   try {
-    const allMessages = await getMessagesService();
+    const { userId } = req.params;
+    const fixId = Number(userId);
+    const allMessages = await getMessagesService(fixId);
     res.status(200).json({ data: allMessages, code: 0 });
   } catch (error) {
     res.status(500).json({ error, code: 1 });
@@ -55,23 +57,18 @@ const postMessageWithUsers = async (
   req: Request,
   res: Response
 ): Promise<any> => {
-  console.log("Request Body:", req.body); // چاپ بدنه درخواست
   const { userId, recieverId, userName, title } = req.body;
+  console.log(req.body);
 
   try {
-    // بررسی ورودی
-    if (!recieverId || !Array.isArray(recieverId) || recieverId.length === 0) {
-      res.status(StatusCodes.BAD_REQUEST).json({
-        message: "recieverId is required and should be a non-empty array",
-      });
-    }
-
     const userMentions = await postMessageWithUsersService({
       userId,
       recieverId,
       userName,
       title,
     });
+
+    console.log(userMentions);
     res.status(StatusCodes.CREATED).json({ data: userMentions, code: 0 });
   } catch (error) {
     res
