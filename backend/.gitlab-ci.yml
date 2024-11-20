@@ -17,7 +17,7 @@ build:
     - echo "Installing dependencies..."
     - npm install
   only:
-    - master  # Runs only on the master branch
+    - main  # Runs only on the master branch
   tags:
     - "production"
 
@@ -44,6 +44,6 @@ deploy:
     - npm install
     #- pm2 restart node; pm2 start src/index.js --name node
   only:
-    - master  #  Runs only on the master branch
+    - main  #  Runs only on the master branch
   tags:
     - "production"
