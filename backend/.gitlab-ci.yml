@@ -1,0 +1,49 @@
+stages:
+  - build
+  # - test
+  - deploy
+
+variables:
+  NODE_ENV: production
+  APP_DIR: "E:\\node-pub"  # Change this to your app's path 1
+
+# variables:
+#   NODE_ENV: "test"
+#   APP_DIR: "E:\\node-pub"  # Replace with your application path
+
+build:
+  stage: build
+  script:
+    - echo "Installing dependencies..."
+    - npm install
+  only:
+    - master  # Runs only on the master branch
+  tags:
+    - "production"
+
+# Job to install dependencies and run tests
+# test:
+#   stage: test
+#   script:
+#     - echo "Running tests..."
+#     - npm install
+#     - npm test
+#   only:
+#     - master  # Runs only on the master branch
+#   tags:
+#     - "production"
+#Job to deploy the application
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying application..."
+    - if (Test-Path $APP_DIR) { Remove-Item -Recurse -Force $APP_DIR }
+    - New-Item -ItemType Directory -Path $APP_DIR
+    - Copy-Item -Recurse -Path .\* -Destination $APP_DIR
+    - cd $APP_DIR
+    - npm install
+    #- pm2 restart node; pm2 start src/index.js --name node
+  only:
+    - master  #  Runs only on the master branch
+  tags:
+    - "production"

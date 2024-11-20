@@ -8,8 +8,6 @@ const postMessagesService = async (messageData: any) => {
   try {
     const connectedDB = await connection();
     const fixRecieverId = messageData?.recieverId?.map((id: number) => id);
-    console.log("fixRecieverId fixRecieverId", fixRecieverId);
-
     const newMessage = connectedDB.getRepository(Messages).create({
       userId: messageData.userId,
       userName: messageData.userName,
@@ -85,23 +83,45 @@ export const getMessagesService = async (userId: number) => {
 export const postMessageWithUsersService = async (payload: any) => {
   const connectedDB = await connection();
 
-  const fixRecieverId = payload?.recieverId?.map(async (ids: any) => {
+  const recieverIds = Array.isArray(payload.recieverId)
+    ? payload.recieverId
+    : null;
+
+  if (recieverIds === null) {
     const newMessageData = {
       userId: payload.userId,
       userName: payload.userName,
       title: payload.title,
-      recieverId: ids,
+      recieverId: null,
     };
-    
+
     const newMessage = connectedDB
       .getRepository(Messages)
       .create(newMessageData);
 
     await connectedDB.getRepository(Messages).save(newMessage);
-  });
+    return newMessage; // return: message when recieverId was null
+  }
+  const fixRecieverId = await Promise.all(
+    recieverIds.map(async (ids: any) => {
+      const newMessageData = {
+        userId: payload.userId,
+        userName: payload.userName,
+        title: payload.title,
+        recieverId: ids !== undefined ? ids : null,
+      };
+
+      const newMessage = connectedDB
+        .getRepository(Messages)
+        .create(newMessageData);
+
+      await connectedDB.getRepository(Messages).save(newMessage);
+      return newMessage;
+    })
+  );
+
   return fixRecieverId;
 };
-
 export { postMessagesService };
 // export const postMessageWithUsersService = async (payload: any) => {
 //   const connectedDB = await connection();

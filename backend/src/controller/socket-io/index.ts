@@ -25,9 +25,9 @@ const setupSocket = (server: any) => {
       });
     });
 
-    socket.on("join_room", (roomId) => {
-      socket.join(roomId);
-      console.log(`User joined room ${roomId}`);
+    socket.on("join_room", (roomData) => {
+      // socket.join(roomData?.pvId);
+      console.log(`User joined room ${roomData}`);
     });
 
     socket.on("send_message", async (MsgData) => {
