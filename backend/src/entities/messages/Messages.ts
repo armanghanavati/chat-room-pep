@@ -17,7 +17,7 @@ export class Messages extends BaseEntity {
   title: string;
 
   @Column()
-  userId: number;
+  userId: any;
 
   @Column()
   userName: string;
@@ -28,24 +28,24 @@ export class Messages extends BaseEntity {
   @Column({ type: "datetime", default: () => "CURRENT_TIMESTAMP" })
   time: Date;
 
-  @OneToMany(() => Reciever, (reciever: any) => reciever.message, {
-    cascade: true,
-  })
-  recievers: Reciever[];
+  // @OneToMany(() => Reciever, (reciever: any) => reciever.message, {
+  //   cascade: true,
+  // })
+  // recievers: Reciever[];
 }
 
-@Entity("receivers") // نام جدول
-export class Reciever extends BaseEntity {
-  @PrimaryGeneratedColumn()
-  id: number;
+// @Entity("receivers") // نام جدول
+// export class Reciever extends BaseEntity {
+//   @PrimaryGeneratedColumn()
+//   id: number;
 
-  @Column("int", { nullable: true })
-  recieverId: number;
+//   @Column("int", { nullable: true })
+//   recieverId: number;
 
-  // ارتباط با Message
-  @ManyToOne(() => Messages, (message) => message.recievers)
-  message: Messages;
-}
+//   // ارتباط با Message
+//   @ManyToOne(() => Messages, (message) => message.recievers)
+//   message: Messages;
+// }
 
 // @Entity("chat-message") // نام جدول
 // export class Message extends BaseEntity {

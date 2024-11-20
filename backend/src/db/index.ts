@@ -1,29 +1,26 @@
-import { Sequelize } from "sequelize-typescript";
-import { Message } from "../models/messages";
-import { Group } from "../models/group";
+import { Messages } from "../entities/messages/Messages";
+import { DataSource } from "typeorm";
 
 export const connection = async () => {
-  const sequelize = new Sequelize({
-    database: "pepDB",
-    dialect: "mssql",
+  const pool = new DataSource({
+    type: "mssql",
     host: "coappweb",
     username: "sa",
     password: "P@yv@nd123",
-    models: [Message, Group],
-    logging: false,
-    dialectOptions: {
-      options: {
-        encrypt: true,
-        trustServerCertificate: true,
-      },
+    database: "ghana",
+    entities: [Messages],
+    // entities: [__dirname + "/**/*.entity{.ts,.js}"],
+    synchronize: true,
+    options: {
+      encrypt: true,
+      trustServerCertificate: true,
     },
   });
 
   try {
-    await sequelize.authenticate();
+    await pool.initialize();
     console.log("Connected to db . . . ");
-    await sequelize.sync();
-    return sequelize;
+    return pool;
   } catch (error) {
     console.error("Failed to connect to db:", error);
     throw error;
@@ -31,11 +28,9 @@ export const connection = async () => {
 };
 
 connection()
-  .then(() => {
-    console.log("Database connection established and models synced:");
+  .then((resolve) => {
+    console.log("Database connection established:");
   })
   .catch((error) => {
     console.error("Error connecting to database:", error);
   });
-
-export default connection;

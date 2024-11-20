@@ -1,9 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 import { Messages } from "../../entities/messages/Messages";
-import connection from "../../db";
+import { connection } from "../../db";
 import Mentions from "../../entities/mentions";
-import { DataSource, getConnection } from "typeorm";
-import { Message } from "../../models/messages";
+import { DataSource, DeepPartial, getConnection } from "typeorm";
+// import { Message } from "../../models/messages";
 
 const postMessagesService = async (messageData: any) => {
   try {
@@ -71,18 +71,19 @@ export const postMessageWithUsersService = async (payload: any) => {
 
   const fixRecieverId = await Promise.all(
     payload?.recieverId?.map(async (reciever: any) => {
-      const newMessageData = {
+      const newMessageData: DeepPartial<Messages> = {
         userId: payload.userId,
         userName: payload.userName,
         title: payload.title,
-        recieverId: reciever,
+        recieverId: reciever || null, // اطمینان از اینکه recieverId می‌تواند null باشد
         time: new Date(),
       };
 
-      const newMessage = await Message.create(newMessageData);
+      const newMessage = await Messages.create(newMessageData).save(); // اضافه کردن .save() برای ذخیره رکورد
       return newMessage;
     })
   );
+
   return fixRecieverId;
 };
 

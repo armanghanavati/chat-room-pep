@@ -1,5 +1,5 @@
 import { PrismaPg } from "@prisma/adapter-pg";
-import connection from "../../db";
+import { connection } from "../../db";
 import Group from "../../entities/room";
 import { GroupType } from "./types";
 
@@ -27,14 +27,14 @@ import { GroupType } from "./types";
 
 const postGroupService = async (payload: GroupType) => {
   try {
-    // const connectedDB = await connection();
-    // const newGroup = connectedDB.getRepository(Group).create({
-    //   usersId: payload.usersId,
-    //   recieverId: payload.recieverId,
-    //   groupName: payload.groupName,
-    // });
-    // await connectedDB.getRepository(Group).save(newGroup);
-    // return newGroup;
+    const connectedDB = await connection();
+    const newGroup = connectedDB.getRepository(Group).create({
+      usersId: payload.usersId,
+      recieverId: payload.recieverId,
+      groupName: payload.groupName,
+    });
+    await connectedDB.getRepository(Group).save(newGroup);
+    return newGroup;
   } catch (error) {
     console.error("Error for post group services . . . ");
     throw error;
