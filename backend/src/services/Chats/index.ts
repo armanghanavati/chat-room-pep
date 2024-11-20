@@ -1,42 +1,27 @@
 import { PrismaClient } from "@prisma/client";
-import Messages from "../../entities/messages/Messages";
+import { Messages } from "../../entities/messages/Messages";
 import connection from "../../db";
 import Mentions from "../../entities/mentions";
 import { DataSource, getConnection } from "typeorm";
+import { Message } from "../../models/messages";
 
 const postMessagesService = async (messageData: any) => {
   try {
-    const connectedDB = await connection();
-    const fixRecieverId = messageData?.recieverId?.map((id: number) => id);
-    console.log("fixRecieverId fixRecieverId", fixRecieverId);
-
-    const newMessage = connectedDB.getRepository(Messages).create({
-      userId: messageData.userId,
-      userName: messageData.userName,
-      title: messageData.title,
-      recieverId: messageData.recieverId,
-    });
-
-    await connectedDB.getRepository(Messages).save(newMessage);
-    return newMessage;
+    // const connectedDB = await connection();
+    // const fixRecieverId = messageData?.recieverId?.map((id: number) => id);
+    // const newMessage = connectedDB.getRepository(Messages).create({
+    //   userId: messageData.userId,
+    //   userName: messageData.userName,
+    //   title: messageData.title,
+    //   recieverId: messageData.recieverId,
+    // });
+    // await connectedDB.getRepository(Messages).save(newMessage);
+    // return newMessage;
   } catch (error) {
     console.error("Error saving message to database:", error);
-
     throw error;
   }
 };
-
-// export const getMessagesService = async () => {
-//   try {
-//     const connectedDB = await connection();
-//     const messageRepo = connectedDB.getRepository(Messages);
-//     const messages = await messageRepo.find();
-//     return messages;
-//   } catch (error) {
-//     console.error("Error saving message to database:", error);
-//     throw error;
-//   }
-// };
 
 const AppDataSource = new DataSource({
   type: "mssql",
@@ -53,7 +38,6 @@ const AppDataSource = new DataSource({
   },
 });
 
-// تابع getMessagesService
 export const getMessagesService = async (userId: number) => {
   try {
     // اتصال به پایگاه داده
@@ -85,49 +69,21 @@ export const getMessagesService = async (userId: number) => {
 export const postMessageWithUsersService = async (payload: any) => {
   const connectedDB = await connection();
 
-  const fixRecieverId = payload?.recieverId?.map(async (ids: any) => {
-    const newMessageData = {
-      userId: payload.userId,
-      userName: payload.userName,
-      title: payload.title,
-      recieverId: ids,
-    };
-    
-    const newMessage = connectedDB
-      .getRepository(Messages)
-      .create(newMessageData);
+  const fixRecieverId = await Promise.all(
+    payload?.recieverId?.map(async (reciever: any) => {
+      const newMessageData = {
+        userId: payload.userId,
+        userName: payload.userName,
+        title: payload.title,
+        recieverId: reciever,
+        time: new Date(),
+      };
 
-    await connectedDB.getRepository(Messages).save(newMessage);
-  });
+      const newMessage = await Message.create(newMessageData);
+      return newMessage;
+    })
+  );
   return fixRecieverId;
 };
 
 export { postMessagesService };
-// export const postMessageWithUsersService = async (payload: any) => {
-//   const connectedDB = await connection();
-
-//   console.log("payload payload payload", payload);
-
-//   const newMessage = connectedDB.getRepository(Messages).create({
-//     userId: payload.userId,
-//     userName: payload.userName,
-//     title: payload.title,
-//     time: new Date(payload.time),
-//   });
-
-//   await connectedDB.getRepository(Messages).save(newMessage);
-
-//   const recieverIds = payload.recieverId;
-//   if (Array.isArray(recieverIds)) {
-//     const receivers = recieverIds.map((id) => {
-//       const reciever = new Reciever();
-//       reciever.recieverId = id;
-//       reciever.message = newMessage;
-//       return reciever;
-//     });
-
-//     await connectedDB.getRepository(Reciever).save(receivers);
-//   }
-
-//   return newMessage;
-// }

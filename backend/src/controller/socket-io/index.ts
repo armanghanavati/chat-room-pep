@@ -34,7 +34,7 @@ const setupSocket = (server: any) => {
       const savedMessage = await postMessagesService(MsgData);
 
       socket.broadcast.emit("receive_message", {
-        id: savedMessage.id,
+        // id: savedMessage.id,
         userId: MsgData.userId,
         time: MsgData.time,
         userName: MsgData.userName,
@@ -43,7 +43,7 @@ const setupSocket = (server: any) => {
       });
 
       socket.emit("receive_message", {
-        id: savedMessage.id,
+        // id: savedMessage.id,
         userId: MsgData.userId,
         time: MsgData.time,
         userName: MsgData.userName,

@@ -27,15 +27,14 @@ import { GroupType } from "./types";
 
 const postGroupService = async (payload: GroupType) => {
   try {
-    const connectedDB = await connection();
-    const newGroup = connectedDB.getRepository(Group).create({
-      usersId: payload.usersId,
-      recieverId: payload.recieverId,
-      groupName: payload.groupName,
-    });
-
-    await connectedDB.getRepository(Group).save(newGroup);
-    return newGroup;
+    // const connectedDB = await connection();
+    // const newGroup = connectedDB.getRepository(Group).create({
+    //   usersId: payload.usersId,
+    //   recieverId: payload.recieverId,
+    //   groupName: payload.groupName,
+    // });
+    // await connectedDB.getRepository(Group).save(newGroup);
+    // return newGroup;
   } catch (error) {
     console.error("Error for post group services . . . ");
     throw error;

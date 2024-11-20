@@ -9,7 +9,7 @@ import {
 import { nullable } from "zod";
 
 @Entity("chat-message")
-export default class Messages extends BaseEntity {
+export class Messages extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number | null;
 
