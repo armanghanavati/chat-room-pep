@@ -8,6 +8,7 @@ import formidable from "formidable";
 import path from "path";
 import fs from "fs";
 import {
+  getAllMessageService,
   getMessagesService,
   postMessageWithUsersService,
 } from "../../services/Chats";
@@ -42,11 +43,20 @@ const uploadFile = async (req: Request, res: Response) => {
   }
 };
 
-const getAllMessages = async (req: Request, res: Response): Promise<void> => {
+const getMessage = async (req: Request, res: Response): Promise<void> => {
   try {
     const { userId } = req.params;
     const fixId = Number(userId);
     const allMessages = await getMessagesService(fixId);
+    res.status(200).json({ data: allMessages, code: 0 });
+  } catch (error) {
+    res.status(500).json({ error, code: 1 });
+  }
+};
+
+const getAllMessages = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const allMessages = await getAllMessageService();
     res.status(200).json({ data: allMessages, code: 0 });
   } catch (error) {
     res.status(500).json({ error, code: 1 });
@@ -58,7 +68,6 @@ const postMessageWithUsers = async (
   res: Response
 ): Promise<any> => {
   const { userId, recieverId, userName, title } = req.body;
-  console.log(req.body);
 
   try {
     const userMentions = await postMessageWithUsersService({
@@ -77,4 +86,4 @@ const postMessageWithUsers = async (
   }
 };
 
-export { uploadFile, getAllMessages, postMessageWithUsers };
+export { uploadFile, getAllMessages, postMessageWithUsers, getMessage };

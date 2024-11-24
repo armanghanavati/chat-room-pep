@@ -6,23 +6,26 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "outDir": "./dist",
+    "rootDir": "./src",
     "moduleResolution": "Node",
     "removeComments": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "noUnusedLocals": false,
+    "paths": {
+      "src/*": ["src/*"]
+    },
     "noUnusedParameters": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true
   },
-  // "exclude": ["src/**/*"],
-  "include": ["node_modules", "./src/**/*.ts"]
+  "include": ["src/**/*"]  // exclude را حذف کنید
 }

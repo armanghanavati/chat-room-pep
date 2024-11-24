@@ -1,7 +1,8 @@
 import { Router } from "express";
-import { getRouteId } from "../../controller/loginData";
+import { postToken, getTokenPep } from "../../controller/loginData";
 
 const router = Router();
-router.get("/:userId", getRouteId);
+router.post("/postToken", postToken);
+router.get("/getTokenPep", getTokenPep);
 
 export default router;

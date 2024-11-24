@@ -1,4 +1,3 @@
-import { PrismaPg } from "@prisma/adapter-pg";
 import connection from "../../db";
 import Group from "../../entities/room";
 import { GroupType } from "./types";

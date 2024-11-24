@@ -42,7 +42,7 @@ deploy:
     - Copy-Item -Recurse -Path .\* -Destination $APP_DIR
     - cd $APP_DIR
     - npm install
-    #- pm2 restart node; pm2 start src/index.js --name node
+    - pm2 restart node; pm2 start dist/index.js --name node
   only:
     - main  #  Runs only on the master branch
   tags:
