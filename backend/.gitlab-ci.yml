@@ -1,25 +1,36 @@
 stages:
   - build
-  # - test
+  #- test
   - deploy
 
 variables:
+   NODE_ENV: build
+   APP_DIR: "E:\\node-pub4"  # Change this to your app's path 1
+
+variables:
   NODE_ENV: production
-  APP_DIR: "E:\\node-pub"  # Change this to your app's path 1
+  APP_DIR: "E:\\node-pub4"  # Change this to your app's path 1
 
 # variables:
 #   NODE_ENV: "test"
-#   APP_DIR: "E:\\node-pub"  # Replace with your application path
+#   APP_DIR: "E:\\node-pub4"  # Replace with your application path
+
+# before_script:
+#   - npm install -g pm2
 
 build:
   stage: build
   script:
     - echo "Installing dependencies..."
     - npm install
+    - npm run build 
   only:
-    - main  # Runs only on the master branch
+    - main  # Runs only on the main branch
   tags:
     - "production"
+  artifacts:
+    paths:
+      - node/
 
 # Job to install dependencies and run tests
 # test:
@@ -27,9 +38,9 @@ build:
 #   script:
 #     - echo "Running tests..."
 #     - npm install
-#     - npm test
+#     #- npm test
 #   only:
-#     - master  # Runs only on the master branch
+#     - main  # Runs only on the main branch
 #   tags:
 #     - "production"
 #Job to deploy the application
@@ -42,8 +53,10 @@ deploy:
     - Copy-Item -Recurse -Path .\* -Destination $APP_DIR
     - cd $APP_DIR
     - npm install
-    - pm2 restart node; pm2 start dist/index.js --name node
+    - npm run build
+    #- npm install pm2@latest -g
+    #- pm2 start dist/index.js --name node
   only:
-    - main  #  Runs only on the master branch
+    - main  ##  Runs only on the main branch
   tags:
     - "production"
