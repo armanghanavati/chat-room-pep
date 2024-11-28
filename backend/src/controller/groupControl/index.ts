@@ -28,6 +28,23 @@ export const postGroupMentions = asyncWrapper(
     res.status(StatusCodes.CREATED).json({ data: groupMentions, code: 0 });
   }
 );
+// try {
+//   const group = new Group();
+//   group.groupName = groupName;
+
+//   // دریافت کاربران و اضافه کردن به گروه
+//   if (userIds && userIds.length > 0) {
+//     const users = await User.findByIds(userIds);
+//     group.users = users;
+//   }
+
+//   await group.save();
+//   res.status(201).json(group);
+// } catch (error) {
+//   res.status(500).json({ message: "Error creating group", error });
+// }
+
+
 
 export const getAllGroup = async (
   req: Request,
