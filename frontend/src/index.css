@@ -2,7 +2,7 @@ body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: iranSansFaNum
+  font-family: iranSansFaNum;
 }
 
 @font-face {
@@ -13,8 +13,28 @@ body * {
   src: url("./assets/fonts/IRANSansWeb_FaNum.woff") format("woff");
 }
 
+.font10 {
+  font-size: 10px;
+}
+
+.font15 {
+  font-size: 15px;
+}
+
+.font20 {
+  font-size: 20px;
+}
+
 .font25 {
   font-size: 25px;
+}
+
+.font35 {
+  font-size: 35px;
+}
+
+.font45 {
+  font-size: 45px;
 }
 
 .cursorPointer {
@@ -27,13 +47,6 @@ body * {
   right: 25%
 }
 
-.font15 {
-  font-size: 15px;
-}
-
-.font20 {
-  font-size: 20px;
-}
 
 .h_messages {
   height: calc(100vh - 90px);
@@ -149,7 +162,21 @@ tr:last-child {
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  max-height: 700px !important;
-  min-height: 700px !important;
+  max-height: 650px !important;
+  min-height: 650px !important;
 
+}
+
+.h_messages {
+  overflow-y: auto;
+  height: calc(100vh - 230px);
+  /* min-height: 100px; */
+}
+
+.rounded_msg_recieve {
+  border-radius: 0 8px 8px 15px;
+}
+
+.rounded_msg_send {
+  border-radius: 15px 0 15px 15px;
 }

@@ -1,22 +1,30 @@
 import axios from "axios";
 const minooAPI = import.meta.env.VITE_MINOOMART;
 const pepTest = import.meta.env.VITE_PEPTEST;
-const nodeAPI = import.meta.env.VITE_NODE;
+const nodeIp = import.meta.env.VITE_NODE_IP;
 
 export const allUsers = async () => {
-  const url = await axios.get(`${pepTest}/api/User/userList`);
-  const response = await fetch(url, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${Token}`,
-    },
-  });
+  const response = await axios.get(`${minooAPI}/api/User/userList`);
   return response?.data;
 };
 
-export const getTokenPep = async () => {
-  const response = await axios.get(`${nodeAPI}/api/login/getTokenPep`);
+export const authUser = async (postData) => {
+  const response = await axios.post(`${minooAPI}/api/User/authUser`, postData);
   console.log(response);
+  return response;
+};
+
+export const getMessages = async () => {
+  const response = await axios.get(`${nodeIp}/api/chatRoom/getAllMessage`);
+  return response;
+};
+
+export const postGroup = async (postData) => {
+  const response = await axios.post(`${nodeIp}/api/group/postGroupMentions`, postData);
+  return response;
+};
+
+export const getAllGroup = async () => {
+  const response = await axios.get(`${nodeIp}/api/group/getAllGroup`);
   return response;
 };

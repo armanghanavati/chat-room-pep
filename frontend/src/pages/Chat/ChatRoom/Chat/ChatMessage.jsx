@@ -1,26 +1,34 @@
 import axios from "axios";
-import React, { useEffect, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { io } from "socket.io-client";
 import Messages from "./Messages";
-import { allUsers, getTokenPep } from "../../../../services/dotNet";
+import { allUsers } from "../../../../services/dotNet";
 
 import SelectMultiTable from "../../../../components/SelectMultiTable";
+import Loading from "../../../../components/Loading";
+import { useContextApi } from "../../../../context";
 
-const ChatMessage = ({ messages, setMessages }) => {
-  const [showLoading, setShowLoading] = useState(false);
+const ChatMessage = ({ messages, setMessages, socket }) => {
+  const { userRole } = useContextApi();
   const { id } = useParams();
-  const userId = sessionStorage.getItem("UserId");
+  const userId = sessionStorage.getItem("userId");
   const userName = sessionStorage.getItem("userName");
+
   const messagesEndRef = useRef(null);
   const hiddenFileInput = useRef(null);
   const titleInputRef = useRef(null);
-  const socket = io(import.meta.env.VITE_NODE);
-  const [permission, setPermission] = useState({});
+
   const [uploadedFiles, setUploadedFiles] = useState([]);
+  const [showLoading, setShowLoading] = useState(false);
   const [title, setTitle] = useState("");
-  const [allMemberGroup, setAllMemberGroup] = useState([]);
   const [selectedUserMention, setSelectedUserMention] = useState([]);
   const [getUserMention, setGetUserMention] = useState([]);
 
@@ -32,9 +40,8 @@ const ChatMessage = ({ messages, setMessages }) => {
     const fixUserId = Number(userId);
     const fixServerUserId = Number(data?.userId);
     const fixRecieverIds = data?.recieverId?.map((ids) => ids);
-    console.log("data data data", data, fixUserId);
-
     const fixIncloudes = fixRecieverIds.some((item) => item === fixUserId);
+
     if (
       fixUserId === fixServerUserId ||
       fixIncloudes ||
@@ -55,7 +62,6 @@ const ChatMessage = ({ messages, setMessages }) => {
 
   useEffect(() => {
     // socket.emit("join_home", getUserId);
-    console.log(socket);
     socket.emit("join_room_id", userId);
     socket.on("receive_message", handleReceiveMessage);
     // socket.on("update_online_users", (data) => {
@@ -86,11 +92,14 @@ const ChatMessage = ({ messages, setMessages }) => {
       userId: userId,
     };
 
+    const fixForRole = userRole?.toString();
+    const getUserRole = fixForRole?.includes("adminChat");
+
     if (title) {
-      if (userId !== "39") {
+      if (getUserRole) {
         socket.emit("send_message", {
           title: title,
-          recieverId: [39],
+          recieverId: [sessionStorage.getItem("userId")],
           userName: userName,
           time: timeString,
           userId: userId,
@@ -105,14 +114,6 @@ const ChatMessage = ({ messages, setMessages }) => {
         });
       }
     }
-    // socket.emit("join_room", {
-    //   title: title,
-    //   recieverId: selectedUserMention,
-    //   pvId: StringHelpers?.generateId(24),
-    //   userName,
-    //   time: timeString,
-    //   userId: userId,
-    // });
     setTitle("");
     titleInputRef?.current?.focus();
   };
@@ -126,7 +127,7 @@ const ChatMessage = ({ messages, setMessages }) => {
 
       try {
         const response = await axios.post(
-          `${import.meta.env.VITE_NODE}/api/chatRoom/uploader`,
+          `${import.meta.env.VITE_NODE_IP}/api/chatRoom/uploader`,
           formData,
           {
             headers: {
@@ -208,31 +209,20 @@ const ChatMessage = ({ messages, setMessages }) => {
   // };
 
   const handleKeyPress = (event) => {
-    console.log(event);
-
     if (event.key === "Enter") {
       event.preventDefault();
       handleSendMessage();
     }
   };
 
-  const handleAllGroups = async () => {
-    // const res = await allUsers();
-    // setShowLoading(false);
-    // const { data, status } = res;
-    // if (status == "Success") {
-    //   console.log(data);
-    //   setAllMemberGroup(data);
-    // }
-  };
-
-  useEffect(() => {
-    handleAllGroups();
+  const handleChangeInput = useCallback((e) => {
+    setTitle(e.target.value);
   }, []);
 
   return (
-    <div className="d-flex row">
-      <div className="mt-2 container-fluid">
+    <div className="d-flex row ">
+      {showLoading && <Loading />}
+      <div className=" mt-2 container-fluid">
         <Col className="bg-white h_messages shadow rounded-top-2">
           <div
             className="d-flex m-1 bg-white justify-content-center p-2"
@@ -261,16 +251,18 @@ const ChatMessage = ({ messages, setMessages }) => {
               onClick={handleSendMessage}
               className="cursorPointer font25 mt-4 text-primary font25 d-flex align-items-center bi bi-send"
             />
-            <SelectMultiTable
-              xxl={2}
-              xl={2}
-              className="mb-2"
-              itemName={"userName"}
-              selected={selectedUserMention}
-              setSelected={setSelectedUserMention}
-              submit={() => setGetUserMention(selectedUserMention)}
-              allListRF={allMemberGroup}
-            />
+            {userId === "39" && (
+              <SelectMultiTable
+                xxl={2}
+                xl={2}
+                className="mb-2"
+                itemName={"userName"}
+                selected={selectedUserMention}
+                setSelected={setSelectedUserMention}
+                submit={() => setGetUserMention(selectedUserMention)}
+                allListRF={allMemberGroup}
+              />
+            )}
             <div className="">
               <i
                 onClick={handleIconClick}
@@ -295,7 +287,7 @@ const ChatMessage = ({ messages, setMessages }) => {
                 name="title"
                 ref={titleInputRef}
                 value={title}
-                onChange={(e) => setTitle(e.target.value)}
+                onChange={handleChangeInput}
               />
             </Col>
           </Col>

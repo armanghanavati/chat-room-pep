@@ -1,6 +1,9 @@
+import { QueryFailedError } from "typeorm";
 import connection from "../../db";
-import Group from "../../entities/room";
-import { GroupType } from "./types";
+import { Group } from "../../entities/group";
+import { GroupType, GroupMentionsType } from "./types";
+import logger from "../../log/logger";
+import { GroupMentions } from "../../entities/groupMentions";
 
 // const getGroupService = async (id: number) => {
 //   return await PC.group.findFirst({
@@ -24,19 +27,63 @@ import { GroupType } from "./types";
 //   return await PC.group.findMany();
 // };
 
-const postGroupService = async (payload: GroupType) => {
+export const postGroupMentionsService = async (payload: GroupMentionsType) => {
   try {
     const connectedDB = await connection();
-    const newGroup = connectedDB.getRepository(Group).create({
-      usersId: payload.usersId,
-      recieverId: payload.recieverId,
-      groupName: payload.groupName,
-    });
+    const getRepo = connectedDB.getRepository(GroupMentions);
 
-    await connectedDB.getRepository(Group).save(newGroup);
+    const newGroup = payload.mentionMmr.map(async (id: number) => {
+      const tempGroup = {
+        userId: payload.userId,
+        mentionMmr: id,
+        groupId: payload.groupId,
+        groupName: payload.groupName,
+      };
+      const response = getRepo.create(tempGroup);
+      await getRepo.save(response);
+    });
     return newGroup;
   } catch (error) {
-    console.error("Error for post group services . . . ");
+    if (error instanceof QueryFailedError) {
+      logger.error("Query Failed: " + error.message);
+      logger.error("Query: " + error.query);
+    } else {
+      logger.error("Unexpected Error: " + error);
+    }
+    throw error;
+  }
+};
+
+export const postGroupService = async (payload: GroupType) => {
+  try {
+    const connectedDB = await connection();
+    const getRepo = connectedDB.getRepository(Group);
+    return getRepo.create({
+      groupName: payload.groupName,
+    });
+  } catch (error) {
+    if (error instanceof QueryFailedError) {
+      logger.error("Query Failed: " + error.message);
+      logger.error("Query: " + error.query);
+    } else {
+      logger.error("Unexpected Error: " + error);
+    }
+    throw error;
+  }
+};
+
+export const getAllGroupService = async () => {
+  try {
+    const connectedDB = await connection();
+    const getRepo = connectedDB.getRepository(Group);
+    return getRepo.find();
+  } catch (error) {
+    if (error instanceof QueryFailedError) {
+      logger.error("Query Failed: " + error.message);
+      logger.error("Query: " + error.query);
+    } else {
+      logger.error("Unexpected Error: " + error);
+    }
     throw error;
   }
 };
@@ -48,11 +95,3 @@ const postGroupService = async (payload: GroupType) => {
 //     },
 //   });
 // };
-
-export {
-  // deleteGroupService,
-  // getGroupService,
-  // getAllgroupService,
-  postGroupService,
-  // editGroupService,
-};

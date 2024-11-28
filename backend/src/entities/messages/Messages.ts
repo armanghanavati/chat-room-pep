@@ -2,14 +2,13 @@ import {
   BaseEntity,
   Column,
   Entity,
-  ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { nullable } from "zod";
+import { Reciever } from "../reciever";
 
-@Entity("chat-message")
-export default class Messages extends BaseEntity {
+@Entity()
+export class Messages extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number | null;
 
@@ -28,20 +27,4 @@ export default class Messages extends BaseEntity {
   @Column({ type: "datetime", default: () => "CURRENT_TIMESTAMP" })
   time: Date;
 
-  @OneToMany(() => Reciever, (reciever: any) => reciever.message, {
-    cascade: true,
-  })
-  recievers: Reciever[];
-}
-
-@Entity("receivers") // نام جدول
-export class Reciever extends BaseEntity {
-  @PrimaryGeneratedColumn()
-  id: number;
-
-  @Column("int", { nullable: true })
-  recieverId: number;
-
-  @ManyToOne(() => Messages, (message) => message.recievers)
-  message: Messages;
 }

@@ -1,12 +1,20 @@
 import { StatusCodes } from "http-status-codes";
 import eventEmitter from "../../middleware/event/eventEmmiter";
 import { Request, Response } from "express";
-import { postTokenService } from "../../services/LoginService";
+import {
+  getTokenPepService,
+  postTokenService,
+} from "../../services/LoginService";
 
 const postToken = async (req: Request, res: Response): Promise<any> => {
-  const { token, userId, userName } = req.body;
+  const { token, userId, userName, userRole } = req.body;
 
-  const loginData = await postTokenService({ token, userId, userName });
+  const loginData = await postTokenService({
+    token,
+    userId,
+    userName,
+    userRole,
+  });
 
   await eventEmitter.emit("loginData", { ...req.body });
 
@@ -18,27 +26,42 @@ const postToken = async (req: Request, res: Response): Promise<any> => {
   res.status(StatusCodes.ACCEPTED).json({ data: loginData, code: 0 });
 };
 
-const getTokenPep = (req: Request, res: Response) => {
-  const timeout = setTimeout(() => {
-    eventEmitter.removeListener("loginData", dataListener);
+const getTokenPep = async (req: Request, res: Response): Promise<any> => {
+  // const timeout = setTimeout(() => {
+  //   eventEmitter.removeListener("loginData", dataListener);
+  //   return res
+  //     .status(StatusCodes.REQUEST_TIMEOUT)
+  //     .json({ msg: "Request timed out" });
+  // }, 10000);
+
+  // const dataListener = (data: any) => {
+  //   console.log("Received data from event emitter:", data);
+  //   clearTimeout(timeout);
+  //   res.status(StatusCodes.OK).json({ data, code: 0 });
+  //   eventEmitter.removeListener("loginData", dataListener);
+  // };
+
+  // eventEmitter.on("loginData", dataListener);
+
+  // req.on("close", () => {
+  //   clearTimeout(timeout);
+  //   eventEmitter.removeListener("loginData", dataListener);
+  // });
+  const { userId } = req.params;
+  try {
+    const userInfo = await getTokenPepService(userId);
+    if (!userInfo) {
+      return res
+        .status(StatusCodes.NOT_FOUND)
+        .json({ message: "User not found", code: 1 });
+    }
+    return res.status(StatusCodes.OK).json({ data: userInfo, code: 0 });
+  } catch (error) {
+    console.error("Error fetching user info", error.message);
     return res
-      .status(StatusCodes.REQUEST_TIMEOUT)
-      .json({ msg: "Request timed out" });
-  }, 10000);
-
-  const dataListener = (data: any) => {
-    console.log("Received data from event emitter:", data);
-    clearTimeout(timeout);
-    res.status(StatusCodes.OK).json({ data, code: 0 });
-    eventEmitter.removeListener("loginData", dataListener);
-  };
-
-  eventEmitter.on("loginData", dataListener);
-
-  req.on("close", () => {
-    clearTimeout(timeout);
-    eventEmitter.removeListener("loginData", dataListener);
-  });
+      .status(StatusCodes.INTERNAL_SERVER_ERROR)
+      .json({ message: "Internal server error", code: 2 });
+  }
 };
 
 export { postToken, getTokenPep };

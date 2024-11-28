@@ -1,8 +1,9 @@
 import React from "react";
-import StringHelpers from "../../../../../utils";
+import StringHelpers from "../../../../../utils/StringHelpers";
+import { Col, Row } from "react-bootstrap";
 
 const Messages = ({ messages, messagesEndRef }) => {
-  const numberUserId = 1;
+  const numberUserId = Number(sessionStorage.getItem("userId"));
 
   return (
     <>
@@ -12,7 +13,7 @@ const Messages = ({ messages, messagesEndRef }) => {
           <div
             ref={messagesEndRef}
             key={index}
-            className={`d-flex w-100 align-items-center justify-content-${
+            className={`d-flex  w-100 align-items-center justify-content-${
               numberUserId === numberServerUserId ? "start" : "end"
             }`}
           >
@@ -23,7 +24,7 @@ const Messages = ({ messages, messagesEndRef }) => {
             )}
             {numberUserId === numberServerUserId && (
               <div
-                className="rounded-5 my-2 p-3"
+                className="rounded_msg_send my-2 p-3"
                 style={{
                   backgroundColor:
                     numberUserId === numberServerUserId
@@ -54,7 +55,7 @@ const Messages = ({ messages, messagesEndRef }) => {
             )}
             {numberUserId !== numberServerUserId && (
               <div
-                className="rounded-5 my-2 p-3"
+                className="rounded_msg_recieve  my-2 p-3"
                 style={{
                   backgroundColor:
                     numberUserId === numberServerUserId
@@ -70,9 +71,12 @@ const Messages = ({ messages, messagesEndRef }) => {
               </div>
             )}
             {numberUserId !== numberServerUserId && (
-              <span className="fw-bold text-secondary mx-1">
-                {msg?.userName}
-              </span>
+              <Col className="d-flex col-1 fw-thin font10 justify-content-center align-items-center text-secondary">
+                <Col xxl="10" className="gap-2">
+                  <i className="bi bi-person-circle font35" />
+                  <span className="">{msg?.userName}</span>
+                </Col>
+              </Col>
             )}
           </div>
         );

@@ -66,7 +66,7 @@ const SelectMultiTable = ({
   };
 
   const handleTitleFilter = (e) => {
-    setTitleFilter(e.event.target.value);
+    setTitleFilter(e.target.value);
   };
 
   const indexOfLastItem = currentPage * itemsPerPage; // آخرین ایتم صفحه جاری
@@ -153,25 +153,29 @@ const SelectMultiTable = ({
             onClick={handleCancel}
             label="لغو"
           />,
-          <Button type="default" onClick={handleSubmit} label="افزودن" />,
+          <Button
+            type="outline-success"
+            onClick={handleSubmit}
+            label="افزودن"
+          />,
         ]}
       >
         <Container className="">
           <Col xl="12">
             <Table responsive striped bordered hover size="sm">
-              <thead className="">
+              <thead className="text-dark">
                 <tr>
-                  <th className="width2 headColorTable py-2 vertical-align-center select text-center text-white fw-normal">
+                  <th className="width2 bg-dark py-2 vertical-align-center select text-center text-white fw-normal">
                     <SwitchCase
                       type="checkbox"
                       checked={selected?.length === filterTable?.length}
                       onChange={handleSelectedAll}
                     />
                   </th>
-                  <th className=" width2 headColorTable py-2 vertical-align-center select text-center text-white fw-normal">
+                  <th className=" width2 bg-dark py-2 vertical-align-center select text-center text-white fw-normal">
                     ردیف
                   </th>
-                  <th className="minWidth150 headColorTable py-2 vertical-align-center select text-center text-white fw-normal width15">
+                  <th className="minWidth150 bg-dark py-2 vertical-align-center select text-center text-white fw-normal width15">
                     <span className="">عنوان</span>
                   </th>
                 </tr>

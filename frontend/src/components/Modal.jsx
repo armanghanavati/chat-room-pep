@@ -1,18 +1,10 @@
 import React from "react";
-import {
-  Col,
-  Modal,
-  ModalBody,
-  ModalFooter,
-  ModalHeader,
-} from "react-bootstrap";
+import { Col, Modal, ModalBody, ModalFooter, ModalHeader } from "reactstrap";
 
 const index = ({
-  classHeader = "bg-dev-blue text-white",
-  hidden,
+  classHeader = "text-white",
   children,
   isOpen,
-  toggle,
   centered = true,
   label,
   onClose,
@@ -25,7 +17,6 @@ const index = ({
         style={{ direction: "rtl" }}
         isOpen={isOpen}
         toggle={onClose}
-        // hidden={hidden}
         className="fontStyle"
         centered={centered}
         size={size}

@@ -1,32 +1,45 @@
 import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
-import { postGroupService } from "../../services/Group";
+import {
+  getAllGroupService,
+  postGroupMentionsService,
+  postGroupService,
+} from "../../services/Group";
 import { EditGroupSchema } from "./groupValid";
 import { CustomErrorApi } from "../../error";
 import { z } from "zod";
 import asyncWrapper from "../../middleware/asyncWrapper";
 
-const postGroup = asyncWrapper(
+export const postGroupMentions = asyncWrapper(
   async (req: Request, res: Response): Promise<void> => {
-    // const validatedData = EditGroupSchema.parse(req.body);
-    // const { groupName, usersId, recieverId } = validatedData;
-    const { groupName, usersId, recieverId } = req.body;
+    const { groupName, mentionMmr, userId } = req.body;
+    // group.groupName = groupName;
+    const group = await postGroupService({ groupName });
+    console.log("group group", group);
 
-    const group = await postGroupService({ groupName, usersId, recieverId });
-    res.status(StatusCodes.CREATED).json({ data: group, code: 0 });
+    const groupMentions = await postGroupMentionsService({
+      groupName,
+      mentionMmr,
+      userId,
+      groupId: group.id,
+    });
+    console.log("groupMentions", groupMentions);
+
+    res.status(StatusCodes.CREATED).json({ data: groupMentions, code: 0 });
   }
 );
 
-const getAllGroup = () => {};
-
-// const getAllGroup = async (req: Request, res: Response): Promise<void> => {
-//   try {
-//     const group = await getAllgroupService();
-//     res.status(200).json({ data: group, code: 0 });
-//   } catch (error) {
-//     res.status(500).json({ error, code: 1 });
-//   }
-// };
+export const getAllGroup = async (
+  req: Request,
+  res: Response
+): Promise<void> => {
+  try {
+    const group = await getAllGroupService();
+    res.status(200).json({ data: group, code: 0 });
+  } catch (error) {
+    res.status(500).json({ error, code: 1 });
+  }
+};
 
 // const getGroup = async (req: Request, res: Response): Promise<any> => {
 //   try {
@@ -75,5 +88,3 @@ const getAllGroup = () => {};
 //     res.status(500).json({ msg: error });
 //   }
 // };
-
-export { postGroup, getAllGroup };

@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { postGroup, getAllGroup } from "../../controller/groupControl";
+import { postGroupMentions, getAllGroup } from "../../controller/groupControl";
 
 const router = Router();
 
-router.post("/postGroup", postGroup);
+router.post("/postGroupMentions", postGroupMentions);
 router.get("/getAllGroup", getAllGroup);
 
 export default router;

@@ -1,20 +1,20 @@
 import React, { createContext, useContext, useState } from "react";
 
-const OnlineUsersContext = createContext();
+const ContextApi = createContext();
 
-const OnlineUsersProvider = ({ children }) => {
+const Context = ({ children }) => {
   const [onlineUsers, setOnlineUsers] = useState([]);
-  const [userInfo, setUserInfo] = useState({});
+  const [userRole, setUserRole] = useState({});
 
   return (
-    <OnlineUsersContext.Provider
-      value={{ onlineUsers, setOnlineUsers, userInfo, setUserInfo }}
+    <ContextApi.Provider
+      value={{ onlineUsers, setOnlineUsers, userRole, setUserRole }}
     >
       {children}
-    </OnlineUsersContext.Provider>
+    </ContextApi.Provider>
   );
 };
 
-const useContextApi = () => useContext(OnlineUsersContext);
+const useContextApi = () => useContext(ContextApi);
 
-export { OnlineUsersProvider, useContextApi };
+export { Context, useContextApi };

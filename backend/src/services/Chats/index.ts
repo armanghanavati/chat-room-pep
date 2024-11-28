@@ -1,9 +1,7 @@
-import Messages from "../../entities/messages/Messages";
+import { Messages } from "../../entities/messages/Messages";
 import connection from "../../db";
-import Mentions from "../../entities/mentions";
-import { DataSource, getConnection } from "typeorm";
+import { DataSource } from "typeorm";
 
-// postMessagesService.ts
 export const postMessagesService = async (messageData: {
   userId: number; // Changed to number to match the entity definition
   userName: string;
@@ -43,7 +41,7 @@ export const postMessagesService = async (messageData: {
       return [newMessage];
     }
   } catch (error) {
-    console.error("Error saving message to database:", error);
+    console.error("Error saving message to database:", error.message);
     throw new Error("Database error: " + error.message);
   }
 };

@@ -5,11 +5,11 @@ stages:
 
 variables:
    NODE_ENV: build
-   APP_DIR: "E:\\node-pub4"  # Change this to your app's path 1
+   APP_DIR: "E:\\node-pub5"  # Change this to your app's path 1
 
 variables:
   NODE_ENV: production
-  APP_DIR: "E:\\node-pub4"  # Change this to your app's path 1
+  APP_DIR: "E:\\node-pub5"  # Change this to your app's path 1
 
 # variables:
 #   NODE_ENV: "test"
@@ -23,14 +23,13 @@ build:
   script:
     - echo "Installing dependencies..."
     - npm install
-    - npm run build 
   only:
     - main  # Runs only on the main branch
   tags:
     - "production"
-  artifacts:
-    paths:
-      - node/
+  # artifacts:
+  #   paths:
+  #     - node/
 
 # Job to install dependencies and run tests
 # test:

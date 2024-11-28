@@ -51,7 +51,7 @@ const setupSocket = (server: any) => {
           recieverId: msgData.recieverId,
         });
       } catch (error) {
-        console.error("Error sending message:", error);
+        console.error("Error sending message:", error.message);
       }
     });
     // socket.on("request_chat_history", async () => {

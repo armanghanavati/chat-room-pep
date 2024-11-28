@@ -1,3 +1,7 @@
+import persian from "react-date-object/calendars/persian";
+import persian_fa from "react-date-object/locales/persian_fa";
+import { DateObject } from "react-multi-date-picker";
+
 export default class StringHelpers {
   static convertNumbersToLatin(input) {
     if (!input) {
@@ -140,7 +144,7 @@ export default class StringHelpers {
   static convertToPersian = (data) => {
     const fixIt = new DateObject(new Date(data))
       .convert(persian, persian_fa)
-      .format("HH:mm:ss - YYYY/MM/DD");
+      .format("HH:mm");
     return fixIt;
   };
 }

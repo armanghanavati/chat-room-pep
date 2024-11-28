@@ -1,8 +1,8 @@
-import Messages, { Reciever } from "../entities/messages/Messages";
-import { DataSource } from "typeorm";
-import Group from "../entities/room";
-import Mentions from "../entities/mentions";
+import { Messages } from "../entities/messages/Messages";
+import { DataSource, QueryFailedError } from "typeorm";
+import { Group } from "../entities/group";
 import { LoginInfo } from "../entities/login";
+import { GroupMentions } from "../entities/groupMentions";
 
 export const connection = async () => {
   const pool = new DataSource({
@@ -11,8 +11,7 @@ export const connection = async () => {
     username: "sa",
     password: "P@yv@nd123",
     database: "pepDB",
-    entities: [Messages, Group, Mentions, Reciever, LoginInfo],
-    // entities: [__dirname + "/**/*.entity{.ts,.js}"],
+    entities: [Messages, Group, LoginInfo, GroupMentions],
     synchronize: true,
     options: {
       encrypt: true,
@@ -25,7 +24,13 @@ export const connection = async () => {
     console.log("Connected to db . . . ");
     return pool;
   } catch (error) {
-    console.error("Failed to connect to db:", error);
+    if (error instanceof QueryFailedError) {
+      console.error("Query Failed: ", error.message);
+      console.error("Query: ", error.query);
+      console.error("Parameters: ", error.parameters);
+    } else {
+      console.error("Failed to connect to db:", error.message);
+    }
     throw error;
   }
 };
@@ -35,7 +40,7 @@ connection()
     console.log("Database connection established:");
   })
   .catch((error) => {
-    console.error("Error connecting to database:", error);
+    console.error("Error connecting to database:", error.message);
   });
 
 export default connection;

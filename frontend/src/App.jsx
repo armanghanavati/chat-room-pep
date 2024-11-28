@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Chat from "./pages/Chat";
+import "./utils/axios";
 
 function App() {
   return (

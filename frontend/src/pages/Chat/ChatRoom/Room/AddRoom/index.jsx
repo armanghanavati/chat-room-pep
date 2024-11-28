@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Button from "../../../../../components/Button";
 import Modal from "../../../../../components/Modal";
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import SelectMultiTable from "../../../../../components/SelectMultiTable";
 import { Form } from "react-bootstrap";
+import { postGroup } from "../../../../../services/dotNet";
+import StringHelpers from "../../../../../utils/StringHelpers";
 
-const AddRoom = ({ showRoom, setShowRoom, isEditRoom }) => {
-  const [inputFields, setInputFields] = useState({});
-  const [allMemberGroup, setAllMemberGroup] = useState([]);
+const AddRoom = ({ showRoom, setShowRoom, isEditRoom, allMemberGroup }) => {
+  const getUserId = sessionStorage.getItem("userId");
+
+  const [groupName, setGroupName] = useState("");
   const [selectedUserMention, setSelectedUserMention] = useState([]);
   const [getUserMention, setGetUserMention] = useState([]);
-  const [showLoading, setShowLoading] = useState(false);
-
-  console.log(getUserMention);
 
   // const handleChangeInputs = (name, value) => {
   //   setInputFields((prevstate) => {
@@ -21,31 +21,14 @@ const AddRoom = ({ showRoom, setShowRoom, isEditRoom }) => {
   //   console.log(name, value);
   // };
 
-  const handleAllGroups = async () => {
-    setShowLoading(true);
-    const res = await allUsers();
-    setShowLoading(false);
-
-    const { data, status, message } = res;
-    if (status == "Success") {
-      setAllMemberGroup(data);
-    }
-  };
-
-  console.log(selectedUserMention);
-
-  useEffect(() => {
-    // handleAllGroups();
-  }, []);
-
   const handleAddGroup = async () => {
     const postData = {
-      // usersId: users?.userId,
-      recieverId: selectedUserMention,
-      groupName: inputFields?.groupName,
+      mentionMmr: selectedUserMention,
+      groupName: groupName,
+      userId: Number(getUserId),
+      groupId: StringHelpers?.generateId(24),
     };
     const res = await postGroup(postData);
-    console.log(res);
   };
 
   return (
@@ -53,7 +36,8 @@ const AddRoom = ({ showRoom, setShowRoom, isEditRoom }) => {
       <Modal
         size="lg"
         label={!isEditRoom ? "ایجاد" : "ویرایش"}
-        isOpen={showRoom}
+        isOpen={true}
+        classHeader="bg-success text-white fw-bold"
         footerButtons={[
           <Button
             text="Outlined"
@@ -62,26 +46,34 @@ const AddRoom = ({ showRoom, setShowRoom, isEditRoom }) => {
             onClick={() => setShowRoom(false)}
             label="لغو"
           />,
-          <Button onClick={handleAddGroup} type="success" label="تایید" />,
+          <Button
+            onClick={handleAddGroup}
+            type="outline-success"
+            label="تایید"
+          />,
         ]}
       >
         <Row className="d-flex justify-content-center align-items-center">
-          <Form.Label> نام گروه: </Form.Label>
-          <Form.Control
-            name="groupName"
-            value={inputFields?.groupName}
-            onChange={(e) => setInputFields(e.target.value)}
-          />
-          <SelectMultiTable
-            xxl={6}
-            xl={6}
-            itemName={"userName"}
-            selected={selectedUserMention}
-            setSelected={setSelectedUserMention}
-            submit={() => setGetUserMention(selectedUserMention)}
-            allListRF={allMemberGroup}
-            label="اعضای گروه:"
-          />
+          <Col xxl="12" className="my-4">
+            <Form.Label> نام گروه: </Form.Label>
+            <Form.Control
+              name="groupName"
+              value={groupName}
+              onChange={(e) => setGroupName(e.target.value)}
+            />
+          </Col>
+          <Col>
+            <SelectMultiTable
+              xxl={12}
+              xl={12}
+              itemName={"userName"}
+              selected={selectedUserMention}
+              setSelected={setSelectedUserMention}
+              submit={() => setGetUserMention(selectedUserMention)}
+              allListRF={allMemberGroup}
+              label="اعضای گروه:"
+            />
+          </Col>
         </Row>
       </Modal>
     </div>
