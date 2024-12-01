@@ -26,5 +26,4 @@ export class Messages extends BaseEntity {
 
   @Column({ type: "datetime", default: () => "CURRENT_TIMESTAMP" })
   time: Date;
-
 }

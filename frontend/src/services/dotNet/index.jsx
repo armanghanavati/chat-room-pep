@@ -20,11 +20,14 @@ export const getMessages = async () => {
 };
 
 export const postGroup = async (postData) => {
-  const response = await axios.post(`${nodeIp}/api/group/postGroupMentions`, postData);
+  const response = await axios.post(
+    `${nodeIp}/api/group/postGroupMentions`,
+    postData
+  );
   return response;
 };
 
-export const getAllGroup = async () => {
-  const response = await axios.get(`${nodeIp}/api/group/getAllGroup`);
+export const getAllGroup = async (userId) => {
+  const response = await axios.get(`${nodeIp}/api/group/getAllGroup/${userId}`);
   return response;
 };

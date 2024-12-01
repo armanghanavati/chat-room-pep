@@ -1,6 +1,6 @@
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("file")
+@Entity()
 export default class Messages extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number | null;

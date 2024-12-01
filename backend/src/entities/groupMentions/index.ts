@@ -22,6 +22,9 @@ export class GroupMentions extends BaseEntity {
   @Column("int", { nullable: true })
   mentionMmr: number | null;
 
+  @Column("int")
+  groupId: number;
+
   @ManyToMany(() => Group, (group: any) => group.groupMentions)
   groups: Group[];
 }

@@ -28,35 +28,15 @@ export const postGroupMentions = asyncWrapper(
     res.status(StatusCodes.CREATED).json({ data: groupMentions, code: 0 });
   }
 );
-// try {
-//   const group = new Group();
-//   group.groupName = groupName;
 
-//   // دریافت کاربران و اضافه کردن به گروه
-//   if (userIds && userIds.length > 0) {
-//     const users = await User.findByIds(userIds);
-//     group.users = users;
-//   }
-
-//   await group.save();
-//   res.status(201).json(group);
-// } catch (error) {
-//   res.status(500).json({ message: "Error creating group", error });
-// }
-
-
-
-export const getAllGroup = async (
-  req: Request,
-  res: Response
-): Promise<void> => {
-  try {
-    const group = await getAllGroupService();
-    res.status(200).json({ data: group, code: 0 });
-  } catch (error) {
-    res.status(500).json({ error, code: 1 });
+export const getAllGroup = asyncWrapper(
+  async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    const numbId = Number(id);
+    const groups = await getAllGroupService(numbId);
+    res.status(StatusCodes.OK).json({ data: groups, code: 0 });
   }
-};
+);
 
 // const getGroup = async (req: Request, res: Response): Promise<any> => {
 //   try {

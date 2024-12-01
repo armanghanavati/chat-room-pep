@@ -14,13 +14,14 @@ import { allUsers } from "../../../../services/dotNet";
 
 import SelectMultiTable from "../../../../components/SelectMultiTable";
 import Loading from "../../../../components/Loading";
-import { useContextApi } from "../../../../context";
+import { useMyContext } from "../../../../context";
 
 const ChatMessage = ({ messages, setMessages, socket }) => {
-  const { userRole } = useContextApi();
+  const { userRole } = useMyContext();
   const { id } = useParams();
   const userId = sessionStorage.getItem("userId");
   const userName = sessionStorage.getItem("userName");
+  const roomId = sessionStorage.getItem("roomId");
 
   const messagesEndRef = useRef(null);
   const hiddenFileInput = useRef(null);
@@ -43,9 +44,10 @@ const ChatMessage = ({ messages, setMessages, socket }) => {
     const fixIncloudes = fixRecieverIds.some((item) => item === fixUserId);
 
     if (
-      fixUserId === fixServerUserId ||
-      fixIncloudes ||
-      data?.recieverId?.length === 0
+      data.roomId === roomId &&
+      (fixUserId === fixServerUserId ||
+        fixIncloudes ||
+        data?.recieverId?.length === 0)
     ) {
       setMessages((prev) => [
         ...prev,
@@ -84,33 +86,26 @@ const ChatMessage = ({ messages, setMessages, socket }) => {
   const handleSendMessage = async (e) => {
     const date = new Date().toString();
     const timeString = date.split(" ")[4];
-
-    const postData = {
-      title: title,
-      recieverId: selectedUserMention,
-      userName,
-      userId: userId,
-    };
-
     const fixForRole = userRole?.toString();
-    const getUserRole = fixForRole?.includes("adminChat");
 
     if (title) {
-      if (getUserRole) {
+      if (roomId !== 0) {
+        socket.emit("send_message", {
+          title: title,
+          recieverId: recieverId,
+          userName: userName,
+          time: timeString,
+          userId: userId,
+          roomId: roomId,
+        });
+      } else {
         socket.emit("send_message", {
           title: title,
           recieverId: [sessionStorage.getItem("userId")],
           userName: userName,
           time: timeString,
           userId: userId,
-        });
-      } else {
-        socket.emit("send_message", {
-          title: title,
-          recieverId: selectedUserMention,
-          userName: userName,
-          time: timeString,
-          userId: userId,
+          roomId: roomId,
         });
       }
     }
@@ -182,31 +177,6 @@ const ChatMessage = ({ messages, setMessages, socket }) => {
     }
     return null;
   };
-
-  // useEffect(() => {
-  //   getPermissions();
-  // }, []);
-
-  // const getPermissions = () => {
-  //   const perm = users?.permissions;
-  //   if (perm != null)
-  //     for (let i = 0; i < perm.length; i++) {
-  //       switch (perm[i].objectName) {
-  //         case "chats.update":
-  //           setPermission((prev) => ({ ...prev, update: true }));
-  //           break;
-  //         case "chats.insert":
-  //           setPermission((prev) => ({ ...prev, insert: true }));
-  //           break;
-  //         case "chats.show":
-  //           setPermission((prev) => ({ ...prev, show: true }));
-  //           break;
-  //         case "chats.delete":
-  //           setPermission((prev) => ({ ...prev, delete: true }));
-  //           break;
-  //       }
-  //     }
-  // };
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {

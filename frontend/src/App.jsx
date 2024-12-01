@@ -1,14 +1,16 @@
 import { Routes, Route } from "react-router-dom";
-import Chat from "./pages/Chat";
 import "./utils/axios";
+import ChatRoom from "./pages/Chat/ChatRoom/ChatRoom";
+import LayoutChatRoom from "./pages/Chat/LayoutChatRoom";
 
 function App() {
   return (
-    <div className="">
+    <>
       <Routes>
-        <Route path="/" element={<Chat />} />
+        <Route path="/" element={<LayoutChatRoom />} />
+        <Route path="/:roomId" element={<ChatRoom />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

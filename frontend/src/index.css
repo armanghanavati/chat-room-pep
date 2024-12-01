@@ -13,6 +13,10 @@ body * {
   src: url("./assets/fonts/IRANSansWeb_FaNum.woff") format("woff");
 }
 
+.hover:hover{
+  background-color: rgb(233, 233, 233);
+}
+
 .font10 {
   font-size: 10px;
 }

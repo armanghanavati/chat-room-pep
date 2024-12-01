@@ -7,7 +7,7 @@ import { Form } from "react-bootstrap";
 import { postGroup } from "../../../../../services/dotNet";
 import StringHelpers from "../../../../../utils/StringHelpers";
 
-const AddRoom = ({ showRoom, setShowRoom, isEditRoom, allMemberGroup }) => {
+const AddRoom = ({ setShowRoom, isEditRoom, allMemberGroup }) => {
   const getUserId = sessionStorage.getItem("userId");
 
   const [groupName, setGroupName] = useState("");
@@ -26,7 +26,6 @@ const AddRoom = ({ showRoom, setShowRoom, isEditRoom, allMemberGroup }) => {
       mentionMmr: selectedUserMention,
       groupName: groupName,
       userId: Number(getUserId),
-      groupId: StringHelpers?.generateId(24),
     };
     const res = await postGroup(postData);
   };
@@ -37,7 +36,7 @@ const AddRoom = ({ showRoom, setShowRoom, isEditRoom, allMemberGroup }) => {
         size="lg"
         label={!isEditRoom ? "ایجاد" : "ویرایش"}
         isOpen={true}
-        classHeader="bg-success text-white fw-bold"
+        classHeader="bg-primary text-white fw-bold"
         footerButtons={[
           <Button
             text="Outlined"

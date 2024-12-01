@@ -27,22 +27,30 @@ import { GroupMentions } from "../../entities/groupMentions";
 //   return await PC.group.findMany();
 // };
 
-export const postGroupMentionsService = async (payload: GroupMentionsType) => {
+export const postGroupMentionsService = async (payload: any) => {
   try {
     const connectedDB = await connection();
     const getRepo = connectedDB.getRepository(GroupMentions);
 
-    const newGroup = payload.mentionMmr.map(async (id: number) => {
-      const tempGroup = {
-        userId: payload.userId,
-        mentionMmr: id,
-        groupId: payload.groupId,
-        groupName: payload.groupName,
-      };
-      const response = getRepo.create(tempGroup);
-      await getRepo.save(response);
-    });
-    return newGroup;
+    const newGroupMentions = await Promise.all(
+      payload.mentionMmr.map(async (id: number) => {
+        const tempGroup = {
+          userId: payload.userId,
+          mentionMmr: id,
+          groupId: payload.groupId, // اطمینان حاصل کنید که این مقدار به درستی ارسال می‌شود
+          groupName: payload.groupName,
+        };
+
+        console.log("Saving mention for groupId:", tempGroup); // برای دیباگ
+
+        const response = getRepo.create(tempGroup);
+        const savedResponse = await getRepo.save(response);
+        console.log("Saved mention:", savedResponse);
+        return savedResponse;
+      })
+    );
+
+    return newGroupMentions; // بازگشت به تمام ذکرها
   } catch (error) {
     if (error instanceof QueryFailedError) {
       logger.error("Query Failed: " + error.message);
@@ -58,9 +66,11 @@ export const postGroupService = async (payload: GroupType) => {
   try {
     const connectedDB = await connection();
     const getRepo = connectedDB.getRepository(Group);
-    return getRepo.create({
+    const newGroup = getRepo.create({
       groupName: payload.groupName,
     });
+    const savedGroup = await getRepo.save(newGroup);
+    return savedGroup;
   } catch (error) {
     if (error instanceof QueryFailedError) {
       logger.error("Query Failed: " + error.message);
@@ -72,11 +82,17 @@ export const postGroupService = async (payload: GroupType) => {
   }
 };
 
-export const getAllGroupService = async () => {
+export const getAllGroupService = async (userId: number) => {
   try {
     const connectedDB = await connection();
-    const getRepo = connectedDB.getRepository(Group);
-    return getRepo.find();
+    const response = await connectedDB
+      .getRepository(GroupMentions)
+      .createQueryBuilder("gm")
+      .where("gm.userId = :userId", { userId })
+      .andWhere("gm.mentionMmr = :mentionMmr", { mentionMmr: userId })
+      .getMany(); // گرفتن تمامی نتایج
+
+    return response; // برگشت نتایج
   } catch (error) {
     if (error instanceof QueryFailedError) {
       logger.error("Query Failed: " + error.message);
@@ -87,11 +103,3 @@ export const getAllGroupService = async () => {
     throw error;
   }
 };
-
-// const deleteGroupService = async (id: number) => {
-//   return await PC.group.delete({
-//     where: {
-//       id,
-//     },
-//   });
-// };

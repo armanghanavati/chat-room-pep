@@ -1,5 +1,6 @@
 import { Server } from "socket.io";
 import { postMessagesService, getMessagesService } from "../../services/Chats";
+import logger from "../../log/logger";
 
 const setupSocket = (server: any) => {
   let onlineUsers: any = [];
@@ -24,15 +25,12 @@ const setupSocket = (server: any) => {
         console.log("Online users:", onlineUsers);
       });
     });
-
     socket.on("join_room_id", (userId) => {
-      // socket.join(roomData?.pvId);
-      console.log(`User joined room ${userId}`);
+      logger.info(`User joined room ${userId}`);
     });
     socket.on("send_message", async (msgData) => {
       try {
         const savedMessages = await postMessagesService(msgData);
-
         socket.broadcast.emit("receive_message", {
           id: savedMessages[0].id,
           userId: msgData.userId,
@@ -40,8 +38,8 @@ const setupSocket = (server: any) => {
           userName: msgData.userName,
           message: msgData.title,
           recieverId: msgData.recieverId,
+          roomId: Number(msgData.roomId),
         });
-
         socket.emit("receive_message", {
           id: savedMessages[0].id,
           userId: msgData.userId,
@@ -49,6 +47,7 @@ const setupSocket = (server: any) => {
           userName: msgData.userName,
           message: msgData.title,
           recieverId: msgData.recieverId,
+          roomId: Number(msgData.roomId),
         });
       } catch (error) {
         console.error("Error sending message:", error.message);
@@ -60,7 +59,6 @@ const setupSocket = (server: any) => {
     //   const chatHistory = await getMessagesService();
     //   socket.emit("chat_history", chatHistory);
     // });
-
     socket.on("disconnect", () => {
       console.log("User disconnected:", socket.id);
     });
