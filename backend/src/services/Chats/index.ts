@@ -1,15 +1,17 @@
 import { Messages } from "../../entities/messages/Messages";
 import connection from "../../db";
 import { DataSource } from "typeorm";
+import logger from "../../log/logger";
 
 export const postMessagesService = async (messageData: {
   userId: number; // Changed to number to match the entity definition
   userName: string;
   title: string;
-  recieverId: number[] | null; // Also changed to number to match entity
+  recieverId: number[] | null;
+  roomId: number;
 }) => {
   try {
-    console.log("messageData", messageData);
+    logger.info(messageData);
     const connectedDB = await connection();
     const connectModel = connectedDB.getRepository(Messages);
 
@@ -21,6 +23,7 @@ export const postMessagesService = async (messageData: {
             userName: messageData.userName,
             title: messageData.title,
             recieverId: id,
+            roomId: messageData.roomId,
           };
 
           const newMessage = connectModel.create(newMessageData);
@@ -36,9 +39,11 @@ export const postMessagesService = async (messageData: {
         userName: messageData.userName,
         title: messageData.title,
         recieverId: null,
+        roomId: messageData.roomId,
       });
-      await connectModel.save(newMessage);
-      return [newMessage];
+      const main = await connectModel.save(newMessage);
+      console.log("main", main);
+      return [main];
     }
   } catch (error) {
     console.error("Error saving message to database:", error.message);
@@ -46,57 +51,50 @@ export const postMessagesService = async (messageData: {
   }
 };
 
-export const getAllMessageService = async () => {
+export const getAllMessageService = async (payload: any) => {
   try {
+    console.log("role", payload);
+    const numbRole = Number(payload?.role);
+    const numbRoomId = Number(payload?.roomId);
     const connectedDB = await connection();
     const messageRepo = connectedDB.getRepository(Messages);
-    const messages = await messageRepo.find();
-    return messages;
+    if (payload?.roomId === 0) {
+      const messages = await messageRepo.find({
+        where: {
+          roomId: payload?.roomId,
+        },
+      });
+      return messages;
+    } else {
+      const messages = await messageRepo.find({
+        where: {
+          roomId: payload?.roomId,
+        },
+      });
+      return messages;
+    }
   } catch (error) {
     console.error("Error saving message to database:", error);
     throw error;
   }
 };
 
-const AppDataSource = new DataSource({
-  type: "mssql",
-  host: "coappweb",
-  username: "sa",
-  password: "P@yv@nd123",
-  database: "pepDB",
-  // entities: [Messages, Group, Mentions, Reciever],
-  // entities: [__dirname + "/**/*.entity{.ts,.js}"],
-  synchronize: true,
-  options: {
-    encrypt: true,
-    trustServerCertificate: true,
-  },
-});
-
-// تابع getMessagesService
-export const getMessagesService = async (userId: number) => {
+export const getMessagesService = async (userId: number, roomId: number) => {
   try {
-    // اتصال به پایگاه داده
-    if (!AppDataSource.isInitialized) {
-      await AppDataSource.initialize();
-    }
-
+    const connectedDB = await connection();
     const query = `
-        SELECT chat.title, chat.[time], chat.id, chat.recieverId, chat.userId , chat.userName
-        FROM [chat-message] chat
+     SELECT chat.title, chat.[time], chat.id, chat.recieverId, chat.userId , chat.userName, chat.roomId
+        FROM [messages] chat
         LEFT JOIN AspNetUsers us ON chat.userId = us.Id
         LEFT JOIN AspNetUserRoles userRole ON us.Id = userRole.UserId
         WHERE (1 = IIF((userRole.RoleId = 1 AND us.Id = ${userId}), 1, 0)
         OR (chat.userId = ${userId} OR chat.recieverId = ${userId})
         OR chat.recieverId IS NULL)
         AND chat.id IS NOT NULL
+        and roomId = ${roomId}
       `;
 
-    // اجرای Query
-    const messages = await AppDataSource.query(query);
-
-    console.log(messages);
-
+    const messages = await connectedDB.query(query);
     return messages;
   } catch (error) {
     console.error("Error fetching messages from database:", error);

@@ -3,23 +3,55 @@ import Room from "./ChatRoom/Room";
 import { Col, Container } from "react-bootstrap";
 import Loading from "../../components/Loading";
 import ChatRoom from "./ChatRoom/ChatRoom";
-import { allUsers, authUser } from "../../services/dotNet";
+import { allUsers, authUser, getAllGroup } from "../../services/dotNet";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useMyContext } from "../../context";
 import jwt from "jwt-decode";
+import Toastify from "../../components/Toastify";
+import { io } from "socket.io-client";
 
 const LayoutChatRoom = () => {
   const query = new URLSearchParams(useLocation().search);
   const username = query.get("username");
   const password = query.get("password");
   const userId = query.get("userId");
-  const roomId = query.get("roomId");
   const navigate = useNavigate();
-  const { setUserInfo, setUserRole } = useMyContext();
+  const socket = io(import.meta.env.VITE_NODE_IP);
+  const { setUserInfo, setUserRole, showToast, setRoomId } = useMyContext();
 
   const [showLoading, setShowLoading] = useState(false);
   const [allMemberGroup, setAllMemberGroup] = useState([]);
   const [getUserId, setGetUserId] = useState("");
+  const [isEditRoom, setIsEditRoom] = useState(false);
+  const [allRoom, setAllRoom] = useState([]);
+
+  const handleGetGroup = (data) => {
+    setAllRoom((prev) => ({ ...prev, data }));
+  };
+
+  const handleGetAllGroup = async () => {
+    try {
+      socket.on("recieve_group", handleGetGroup);
+      setShowLoading(true);
+      const res = await getAllGroup(userId);
+      const { data, code } = res.data;
+      setAllRoom(data);
+      setShowLoading(false);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    socket.on("recieve_group", handleGetGroup);
+    return () => {
+      socket.off("recieve_group", handleGetGroup);
+    };
+  }, [socket]);
+
+  useEffect(() => {
+    handleGetAllGroup();
+  }, []);
 
   const handleGetToken = async () => {
     const postData = {
@@ -31,16 +63,18 @@ const LayoutChatRoom = () => {
       const res = await authUser(postData);
       setShowLoading(false);
       const roleId = jwt(res?.data?.data?.token);
+      console.log(roleId);
+      
       const getRole =
         roleId["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
       setUserRole(getRole);
       const { status, data: userData } = res.data;
+      console.log(res);
 
       if (status === "Success") {
         sessionStorage.setItem("userId", userId);
         sessionStorage.setItem("token", userData?.token);
         sessionStorage.setItem("userName", username);
-        sessionStorage.setItem("roomId", roomId);
         setGetUserId(userId);
         handleAllUsers();
       }
@@ -50,9 +84,11 @@ const LayoutChatRoom = () => {
   };
 
   const handleRoomClick = (newRoomId) => {
-    sessionStorage.setItem("roomId", newRoomId.id);
+    setRoomId(newRoomId?.room?.groupId || 0);
     navigate(
-      `/?username=${username}&password=${password}&userId=${userId}&roomId=${newRoomId.id}`
+      `/?username=${username}&password=${password}&userId=${userId}&roomId=${
+        newRoomId?.room?.groupId || 0
+      }`
     );
   };
 
@@ -60,7 +96,6 @@ const LayoutChatRoom = () => {
     try {
       setShowLoading(true);
       const res = await allUsers();
-      console.log(res);
       setShowLoading(false);
       const { data, status } = res;
       if (status == "Success") {
@@ -85,31 +120,49 @@ const LayoutChatRoom = () => {
     handleGetUserInfo();
   }, []);
 
+  const handleProfile = () => {};
+
   return (
-    <div className="">
-      {showLoading && <Loading />}
-      <p className="col-12 font15 rounded-1 fw-bold bg-white border-bottom border-3 mt-3 px-3 py-2">
-        گروه عمومی
-      </p>
-      <div className="d-flex row mx-1 pb-3">
-        <ChatRoom
-          getUserId={getUserId}
-          username={username}
-          password={password}
-          userId={userId}
-          showLoading={showLoading}
-          setShowLoading={setShowLoading}
-          allMemberGroup={allMemberGroup}
-          setAllMemberGroup={setAllMemberGroup}
-        />
-        <Room
-          allMemberGroup={allMemberGroup}
-          showLoading={showLoading}
-          handleRoomClick={handleRoomClick}
-          setShowLoading={setShowLoading}
-        />
+    <>
+      <div className="">
+        {showLoading && <Loading />}
+        <p className="col-12 bg_rooms font15 fw-bold bg-white d-flex justify-content-between border-bottom border-1 px-3 py-3">
+          <span className="text-white">گروه عمومی</span>
+          <span>
+            <i
+              onClick={handleProfile}
+              className=" cursorPointer font20 bi bi-gear"
+            />
+          </span>
+        </p>
+        <div className="d-flex row mx-1 pb-3">
+          <ChatRoom
+            getUserId={getUserId}
+            username={username}
+            password={password}
+            userId={userId}
+            showLoading={showLoading}
+            setShowLoading={setShowLoading}
+            allMemberGroup={allMemberGroup}
+            setAllMemberGroup={setAllMemberGroup}
+            socket={socket}
+          />
+          <Room
+            handleGetAllGroup={handleGetAllGroup}
+            allRoom={allRoom}
+            setAllRoom={setAllRoom}
+            isEditRoom={isEditRoom}
+            setIsEditRoom={setIsEditRoom}
+            socket={socket}
+            allMemberGroup={allMemberGroup}
+            showLoading={showLoading}
+            handleRoomClick={handleRoomClick}
+            setShowLoading={setShowLoading}
+          />
+        </div>
       </div>
-    </div>
+      {showToast?.show && <Toastify />}
+    </>
   );
 };
 

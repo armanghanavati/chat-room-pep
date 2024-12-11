@@ -10,19 +10,17 @@ import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { io } from "socket.io-client";
 import Messages from "./Messages";
-import { allUsers } from "../../../../services/dotNet";
 
 import SelectMultiTable from "../../../../components/SelectMultiTable";
 import Loading from "../../../../components/Loading";
 import { useMyContext } from "../../../../context";
+import { attachFile } from "../../../../services/dotNet";
 
-const ChatMessage = ({ messages, setMessages, socket }) => {
-  const { userRole } = useMyContext();
+const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
+  const { userRole, roomId } = useMyContext();
   const { id } = useParams();
   const userId = sessionStorage.getItem("userId");
   const userName = sessionStorage.getItem("userName");
-  const roomId = sessionStorage.getItem("roomId");
-
   const messagesEndRef = useRef(null);
   const hiddenFileInput = useRef(null);
   const titleInputRef = useRef(null);
@@ -32,7 +30,6 @@ const ChatMessage = ({ messages, setMessages, socket }) => {
   const [title, setTitle] = useState("");
   const [selectedUserMention, setSelectedUserMention] = useState([]);
   const [getUserMention, setGetUserMention] = useState([]);
-
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -40,10 +37,30 @@ const ChatMessage = ({ messages, setMessages, socket }) => {
   const handleReceiveMessage = (data) => {
     const fixUserId = Number(userId);
     const fixServerUserId = Number(data?.userId);
-    const fixRecieverIds = data?.recieverId?.map((ids) => ids);
-    const fixIncloudes = fixRecieverIds.some((item) => item === fixUserId);
+    const mapRecieverIds =
+      data?.recieverId !== null ? data?.recieverId?.map((ids) => ids) : [];
+    const fixIncloudes = mapRecieverIds.some((item) => item === fixUserId);
+    console.log(
+      "data",
+      data,
+      "fixIncloudes ",
+      mapRecieverIds,
+      data?.recieverId?.length
+    );
 
-    if (
+    if (roomId !== 0) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          title: data?.message,
+          userId: data?.userId,
+          userName: data?.userName,
+          time: data?.time,
+          recieverId: data?.recieverId,
+          roomId: data?.roomId,
+        },
+      ]);
+    } else if (
       data.roomId === roomId &&
       (fixUserId === fixServerUserId ||
         fixIncloudes ||
@@ -57,14 +74,14 @@ const ChatMessage = ({ messages, setMessages, socket }) => {
           userName: data?.userName,
           time: data?.time,
           recieverId: data?.recieverId,
+          roomId: data?.roomId,
         },
       ]);
     }
   };
 
   useEffect(() => {
-    // socket.emit("join_home", getUserId);
-    socket.emit("join_room_id", userId);
+    socket.emit("join_room_id", roomId);
     socket.on("receive_message", handleReceiveMessage);
     // socket.on("update_online_users", (data) => {
     //   setOnlineUsers(data);
@@ -79,20 +96,17 @@ const ChatMessage = ({ messages, setMessages, socket }) => {
     id, // setOnlineUsers
   ]);
 
-  const handleIconClick = () => {
-    hiddenFileInput.current.click();
-  };
-
-  const handleSendMessage = async (e) => {
+  const handleSendMessage = () => {
     const date = new Date().toString();
     const timeString = date.split(" ")[4];
     const fixForRole = userRole?.toString();
+    // const findAdmin = fixForRole?.includes("chatAdmin");
 
     if (title) {
       if (roomId !== 0) {
         socket.emit("send_message", {
           title: title,
-          recieverId: recieverId,
+          recieverId: null,
           userName: userName,
           time: timeString,
           userId: userId,
@@ -114,28 +128,19 @@ const ChatMessage = ({ messages, setMessages, socket }) => {
   };
 
   const handleFileSend = async (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const formData = new FormData();
-      formData.append("file", file);
-      console.log(formData, file);
-
-      try {
-        const response = await axios.post(
-          `${import.meta.env.VITE_NODE_IP}/api/chatRoom/uploader`,
-          formData,
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        );
-        console.log(response);
-
+    try {
+      const file = e.target.files[0];
+      if (file) {
+        const formData = new FormData();
+        formData.append("file", file);
+        socket.emit("attach_file", {
+          userId,
+        });
+        const res = await attachFile(formData);
         setUploadedFiles((prevFiles) => [...prevFiles, file]);
-      } catch (error) {
-        console.error("Error uploading file:", error);
       }
+    } catch (error) {
+      console.error("Error uploading file:", error);
     }
   };
 
@@ -235,7 +240,7 @@ const ChatMessage = ({ messages, setMessages, socket }) => {
             )}
             <div className="">
               <i
-                onClick={handleIconClick}
+                onClick={() => hiddenFileInput.current.click()}
                 className="d-flex mt-3 align-items-center justify-content-center text-primary font25 cursorPointer bi bi-paperclip"
               />
               <input

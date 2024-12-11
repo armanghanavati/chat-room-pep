@@ -5,7 +5,6 @@ import {
   OneToMany,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { Reciever } from "../reciever";
 
 @Entity()
 export class Messages extends BaseEntity {
@@ -23,6 +22,9 @@ export class Messages extends BaseEntity {
 
   @Column("int", { nullable: true })
   recieverId: number | null;
+
+  @Column("int", { default: 0 })
+  roomId: number;
 
   @Column({ type: "datetime", default: () => "CURRENT_TIMESTAMP" })
   time: Date;

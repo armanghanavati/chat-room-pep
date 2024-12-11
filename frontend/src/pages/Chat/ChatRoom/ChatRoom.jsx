@@ -3,7 +3,12 @@ import ChatMessage from "./Chat/ChatMessage";
 import { io } from "socket.io-client";
 import Room from "./Room";
 import { Col, Container } from "react-bootstrap";
-import { allUsers, authUser, getMessages } from "../../../services/dotNet";
+import {
+  allUsers,
+  authUser,
+  getMessageQuery,
+  getMessages,
+} from "../../../services/dotNet";
 import Loading from "../../../components/Loading";
 import jwt from "jwt-decode";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
@@ -14,15 +19,12 @@ const ChatRoom = ({
   setShowLoading,
   allMemberGroup,
   setAllMemberGroup,
-  username,
-  password,
+  socket,
   getUserId,
 }) => {
-  const { setUserRole } = useMyContext();
-  const socket = io(import.meta.env.VITE_NODE_IP);
-  const { roomId } = useParams();
-  const [messages, setMessages] = useState([]);
-
+  let tempAdminRole = false;
+  const { setUserRole, roomId, userRole } = useMyContext();
+  const [messages, setMessages] = useState(null);
   // const validateCredentials = () => {
   //   if (username && password) {
   //     handleGetToken({ username, password });
@@ -34,7 +36,8 @@ const ChatRoom = ({
 
   const fetchChatHistory = async () => {
     try {
-      const res = await getMessages();
+      const res = await getMessageQuery(getUserId, roomId);
+      console.log(res);
       setMessages(res?.data?.data);
     } catch (error) {
       console.error("Error fetching chat history:", error);
@@ -46,6 +49,7 @@ const ChatRoom = ({
     if (getUserId) {
       socket.emit("join_home", getUserId);
     }
+
     return () => {
       socket.off("update_online_users");
       socket.disconnect();

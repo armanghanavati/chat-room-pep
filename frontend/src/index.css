@@ -13,8 +13,10 @@ body * {
   src: url("./assets/fonts/IRANSansWeb_FaNum.woff") format("woff");
 }
 
-.hover:hover{
-  background-color: rgb(233, 233, 233);
+.hover:hover {
+  background-color: rgba(241, 241, 241, 0.363);
+  transition: all 0.3s;
+
 }
 
 .font10 {
@@ -52,8 +54,24 @@ body * {
 }
 
 
+.toastContainer {
+  position: fixed;
+  top: 13%;
+  /* opacity: .9; */
+  left: 4%;
+  z-index: 1000000;
+  direction: ltr;
+}
+
+
 .h_messages {
-  height: calc(100vh - 90px);
+  overflow-y: auto;
+  height: calc(100vh - 230px);
+}
+
+.h_rooms {
+  overflow-y: auto;
+  height: calc(100vh - 133px);
 }
 
 .border_chat {
@@ -171,16 +189,22 @@ tr:last-child {
 
 }
 
-.h_messages {
-  overflow-y: auto;
-  height: calc(100vh - 230px);
-  /* min-height: 100px; */
-}
-
 .rounded_msg_recieve {
   border-radius: 0 8px 8px 15px;
 }
 
 .rounded_msg_send {
   border-radius: 15px 0 15px 15px;
+}
+
+.bg_rooms {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(144 177 255) 0%, rgb(0 49 126) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.trans {
+  transition: all 0.3s;
+
+  /* transform: scale(-1, 1);
+  transform: translateX(-50%); */
 }

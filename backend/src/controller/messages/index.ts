@@ -13,6 +13,7 @@ import {
   postMessageWithUsersService,
 } from "../../services/Chats";
 import asyncWrapper from "../../middleware/asyncWrapper";
+import logger from "../../log/logger";
 
 const uploadsDir = path.join(__dirname, "testUpload");
 if (!fs.existsSync(uploadsDir)) {
@@ -45,9 +46,10 @@ const uploadFile = async (req: Request, res: Response) => {
 
 const getMessage = async (req: Request, res: Response): Promise<void> => {
   try {
-    const { userId } = req.params;
-    const fixId = Number(userId);
-    const allMessages = await getMessagesService(fixId);
+    const { userId, roomId } = req.params;
+    const userIdNumb = Number(userId);
+    const roomIdNumb = Number(roomId);
+    const allMessages = await getMessagesService(userIdNumb, roomIdNumb);
     res.status(200).json({ data: allMessages, code: 0 });
   } catch (error) {
     res.status(500).json({ error, code: 1 });
@@ -56,7 +58,10 @@ const getMessage = async (req: Request, res: Response): Promise<void> => {
 
 const getAllMessages = async (req: Request, res: Response): Promise<void> => {
   try {
-    const allMessages = await getAllMessageService();
+    const { roomId, role } = req.params;
+    console.log("getAllMessages", roomId, role);
+
+    const allMessages = await getAllMessageService({ roomId, role });
     res.status(200).json({ data: allMessages, code: 0 });
   } catch (error) {
     res.status(500).json({ error, code: 1 });

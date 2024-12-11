@@ -14,6 +14,6 @@ export class LoginInfo extends BaseEntity {
   @Column()
   userName: string;
 
-  @Column()
+  @Column({ nullable: true })
   userRole: string;
 }

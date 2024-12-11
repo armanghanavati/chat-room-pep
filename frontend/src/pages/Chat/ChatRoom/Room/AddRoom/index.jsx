@@ -6,20 +6,22 @@ import SelectMultiTable from "../../../../../components/SelectMultiTable";
 import { Form } from "react-bootstrap";
 import { postGroup } from "../../../../../services/dotNet";
 import StringHelpers from "../../../../../utils/StringHelpers";
+import { useMyContext } from "../../../../../context";
 
-const AddRoom = ({ setShowRoom, isEditRoom, allMemberGroup }) => {
+const AddRoom = ({
+  handleGetAllGroup,
+  setShowRoom,
+  isEditRoom,
+  showRoom,
+  allMemberGroup,
+  socket,
+}) => {
   const getUserId = sessionStorage.getItem("userId");
-
   const [groupName, setGroupName] = useState("");
+  const { setShowToast } = useMyContext();
+
   const [selectedUserMention, setSelectedUserMention] = useState([]);
   const [getUserMention, setGetUserMention] = useState([]);
-
-  // const handleChangeInputs = (name, value) => {
-  //   setInputFields((prevstate) => {
-  //     return { ...prevstate, [name]: value };
-  //   });
-  //   console.log(name, value);
-  // };
 
   const handleAddGroup = async () => {
     const postData = {
@@ -28,6 +30,25 @@ const AddRoom = ({ setShowRoom, isEditRoom, allMemberGroup }) => {
       userId: Number(getUserId),
     };
     const res = await postGroup(postData);
+    const { data, code } = res.data;
+    if (code === 0) {
+      console.log(data);
+      socket.emit("add_group", { groupName, userId: Number(getUserId) });
+      console.log("data");
+      handleGetAllGroup();
+      setShowRoom(false);
+      setShowToast({
+        show: true,
+        bg: "success",
+        title: "با موفقیت ثبت شد",
+      });
+    } else {
+      setShowToast({
+        show: true,
+        bg: "danger",
+        title: "مشکلی در سرور به وجود آمده است",
+      });
+    }
   };
 
   return (
@@ -35,7 +56,7 @@ const AddRoom = ({ setShowRoom, isEditRoom, allMemberGroup }) => {
       <Modal
         size="lg"
         label={!isEditRoom ? "ایجاد" : "ویرایش"}
-        isOpen={true}
+        isOpen={showRoom}
         classHeader="bg-primary text-white fw-bold"
         footerButtons={[
           <Button

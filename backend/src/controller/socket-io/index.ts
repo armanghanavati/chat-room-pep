@@ -1,6 +1,10 @@
 import { Server } from "socket.io";
 import { postMessagesService, getMessagesService } from "../../services/Chats";
 import logger from "../../log/logger";
+import {
+  postGroupMentionsService,
+  postGroupService,
+} from "../../services/Group";
 
 const setupSocket = (server: any) => {
   let onlineUsers: any = [];
@@ -13,23 +17,34 @@ const setupSocket = (server: any) => {
   });
 
   io.on("connection", (socket) => {
-    socket.on("join_home", (userId) => {
-      if (!onlineUsers.includes(userId)) {
-        onlineUsers.push(userId);
-      }
-      io.emit("update_online_users", onlineUsers);
-
-      socket.on("disconnect", () => {
-        onlineUsers = onlineUsers.filter((user: any) => user !== userId);
+    try {
+      socket.on("join_home", (userId) => {
+        if (!onlineUsers.includes(userId)) {
+          onlineUsers.push(userId);
+        }
         io.emit("update_online_users", onlineUsers);
-        console.log("Online users:", onlineUsers);
+
+        socket.on("disconnect", () => {
+          onlineUsers = onlineUsers.filter((user: any) => user !== userId);
+          io.emit("update_online_users", onlineUsers);
+          console.log("Online users:", onlineUsers);
+        });
       });
-    });
-    socket.on("join_room_id", (userId) => {
-      logger.info(`User joined room ${userId}`);
-    });
-    socket.on("send_message", async (msgData) => {
-      try {
+      socket.on("join_room_id", (roomId) => {
+        logger.info(`User joined room ${roomId}`);
+        socket.join(roomId);
+      });
+
+      socket.on("add_group", async (data) => {
+        console.log("add_group", data);
+        socket.emit("recieve_group", {
+          userId: data?.userId,
+          groupName: data?.groupName,
+        });
+      });
+
+      socket.on("send_message", async (msgData) => {
+        console.log("msgDataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ,msgData);
         const savedMessages = await postMessagesService(msgData);
         socket.broadcast.emit("receive_message", {
           id: savedMessages[0].id,
@@ -49,10 +64,13 @@ const setupSocket = (server: any) => {
           recieverId: msgData.recieverId,
           roomId: Number(msgData.roomId),
         });
-      } catch (error) {
-        console.error("Error sending message:", error.message);
-      }
-    });
+      });
+      socket.on("attach_file", (userId) => {
+        console.log(userId);
+      });
+    } catch (error) {
+      console.error("Error sending message:", error.message);
+    }
     // socket.on("request_chat_history", async () => {
     //   const fixId = MsgData.userId;
 
@@ -67,52 +85,3 @@ const setupSocket = (server: any) => {
 };
 
 export default setupSocket;
-
-// const express = require('express');
-// const http = require('http');
-// const socketIo = require('socket.io');
-
-// const app = express();
-// const server = http.createServer(app);
-// const io = socketIo(server);
-
-// // یک شی برای نگه‌داری اعضای گروه‌ها
-// let groups = {
-//   'group1': []  // گروه اول
-// };
-
-// // اتصال به سوکت
-// io.on('connection', (socket) => {
-//   console.log('یک کاربر وصل شد:', socket.id);
-
-//   // عضویت کاربر در گروه
-//   socket.on('joinGroup', (groupName) => {
-//     if (!groups[groupName]) {
-//       groups[groupName] = [];
-//     }
-//     groups[groupName].push(socket.id);
-//     console.log(`${socket.id} به گروه ${groupName} پیوست`);
-//   });
-
-//   // ارسال پیام به اعضای خاص یک گروه
-//   socket.on('sendMessageToGroup', (groupName, receivers, message) => {
-//     if (groups[groupName]) {
-//       // ارسال پیام فقط به آیدی‌های خاص (در اینجا مثلا آیدی‌های 3 و 5)
-//       receivers.forEach(receiverId => {
-//         // چک کردن اگر آیدی در گروه وجود دارد
-//         if (groups[groupName].includes(receiverId)) {
-//           io.to(receiverId).emit('newMessage', message);
-//         }
-//       });
-//     }
-//   });
-
-//   // قطع ارتباط کاربر
-//   socket.on('disconnect', () => {
-//     console.log('یک کاربر قطع ارتباط کرد:', socket.id);
-//     // حذف کاربر از گروه‌ها
-//     for (let group in groups) {
-//       groups[group] = groups[group].filter(id => id !== socket.id);
-//     }
-//   });
-// });

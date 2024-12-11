@@ -1,0 +1,413 @@
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
+1403/9/18 [error]: Caaaaaaaatch Errrror . . .
+1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
+1403/9/19 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'userRole' cannot be added to non-empty table 'login_info' because it does not satisfy these conditions.
+1403/9/19 [error]: Query: ALTER TABLE "login_info" ADD "userRole" nvarchar(255) NOT NULL
+1403/9/19 [error]: Caaaaaaaatch Errrror . . .
+1403/9/19 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'userRole' cannot be added to non-empty table 'login_info' because it does not satisfy these conditions.
+1403/9/19 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'userRole' cannot be added to non-empty table 'login_info' because it does not satisfy these conditions.
+1403/9/19 [error]: Query: ALTER TABLE "login_info" ADD "userRole" nvarchar(255) NOT NULL
+1403/9/19 [error]: Caaaaaaaatch Errrror . . .
+1403/9/19 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'userRole' cannot be added to non-empty table 'login_info' because it does not satisfy these conditions.
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Converting circular structure to JSON
+    --> starting at object with constructor 'EntityMetadata'
+    |     property 'ownColumns' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 'ColumnMetadata'
+    --- property 'entityMetadata' closes the circle
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Converting circular structure to JSON
+    --> starting at object with constructor 'EntityMetadata'
+    |     property 'ownColumns' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 'ColumnMetadata'
+    --- property 'entityMetadata' closes the circle
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Cannot insert the value NULL into column 'groupId', table 'pepDB.dbo.group_mentions'; column does not allow nulls. INSERT fails.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/20 [error]: Caaaaaaaatch Errrror . . .
+1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/20 [error]: Unexpected Error: TypeError: Cannot read properties of undefined (reading 'map')
+1403/9/21 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/21 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/21 [error]: Caaaaaaaatch Errrror . . .
+1403/9/21 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/21 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/21 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/21 [error]: Caaaaaaaatch Errrror . . .
+1403/9/21 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/21 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/21 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/21 [error]: Caaaaaaaatch Errrror . . .
+1403/9/21 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/21 [error]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/21 [error]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/21 [error]: Caaaaaaaatch Errrror . . .
+1403/9/21 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/21 [error]: Unexpected Error: TypeError: Cannot read properties of undefined (reading 'map')
+1403/9/21 [error]: Unexpected Error: TypeError: Cannot read properties of undefined (reading 'map')
+1403/9/21 [error]: Unexpected Error: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/21 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}

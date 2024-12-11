@@ -13,9 +13,7 @@ import asyncWrapper from "../../middleware/asyncWrapper";
 export const postGroupMentions = asyncWrapper(
   async (req: Request, res: Response): Promise<void> => {
     const { groupName, mentionMmr, userId } = req.body;
-    // group.groupName = groupName;
     const group = await postGroupService({ groupName });
-    console.log("group group", group);
 
     const groupMentions = await postGroupMentionsService({
       groupName,
@@ -23,8 +21,6 @@ export const postGroupMentions = asyncWrapper(
       userId,
       groupId: group.id,
     });
-    console.log("groupMentions", groupMentions);
-
     res.status(StatusCodes.CREATED).json({ data: groupMentions, code: 0 });
   }
 );
@@ -33,6 +29,7 @@ export const getAllGroup = asyncWrapper(
   async (req: Request, res: Response): Promise<void> => {
     const { id } = req.params;
     const numbId = Number(id);
+    
     const groups = await getAllGroupService(numbId);
     res.status(StatusCodes.OK).json({ data: groups, code: 0 });
   }
