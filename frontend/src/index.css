@@ -53,6 +53,15 @@ body * {
   right: 25%
 }
 
+.bg_chat_recive {
+  background: rgba(212, 137, 255, 0.507);
+  background: linear-gradient(90deg, rgba(181, 8, 255, 0.445) 0%, rgba(255, 58, 58, 0.397) 100%, rgb(255, 255, 255) 100%);
+}
+
+.bg_chat_send {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(223, 232, 255) 0%, rgb(157, 195, 255) 100%, rgb(255, 255, 255) 100%);
+}
 
 .toastContainer {
   position: fixed;

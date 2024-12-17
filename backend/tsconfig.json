@@ -13,14 +13,14 @@
     "noImplicitThis": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "baseUrl": "./",
+    "baseUrl": "./src", 
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "noUnusedLocals": false,
     "paths": {
-      "src/*": ["src/*"]
+      "*": ["*"] 
     },
     "noUnusedParameters": false,
     "noImplicitReturns": true,

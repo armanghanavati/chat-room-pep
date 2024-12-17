@@ -3,7 +3,12 @@ import Room from "./ChatRoom/Room";
 import { Col, Container } from "react-bootstrap";
 import Loading from "../../components/Loading";
 import ChatRoom from "./ChatRoom/ChatRoom";
-import { allUsers, authUser, getAllGroup } from "../../services/dotNet";
+import {
+  allUsers,
+  authUser,
+  getAllAdminChat,
+  getAllGroup,
+} from "../../services/dotNet";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useMyContext } from "../../context";
 import jwt from "jwt-decode";
@@ -12,16 +17,15 @@ import { io } from "socket.io-client";
 
 const LayoutChatRoom = () => {
   const query = new URLSearchParams(useLocation().search);
-  const username = query.get("username");
-  const password = query.get("password");
-  const userId = query.get("userId");
+  const token = query.get("tk");
   const navigate = useNavigate();
   const socket = io(import.meta.env.VITE_NODE_IP);
-  const { setUserInfo, setUserRole, showToast, setRoomId } = useMyContext();
+  const { setUserInfo, showToast, userInfo, setRoomId, setAllAdminChat } =
+    useMyContext();
 
   const [showLoading, setShowLoading] = useState(false);
   const [allMemberGroup, setAllMemberGroup] = useState([]);
-  const [getUserId, setGetUserId] = useState("");
+  const [groupName, setGroupName] = useState("");
   const [isEditRoom, setIsEditRoom] = useState(false);
   const [allRoom, setAllRoom] = useState([]);
 
@@ -29,11 +33,12 @@ const LayoutChatRoom = () => {
     setAllRoom((prev) => ({ ...prev, data }));
   };
 
-  const handleGetAllGroup = async () => {
+  const handleGetAllGroup = async (userId) => {
     try {
-      socket.on("recieve_group", handleGetGroup);
+      // socket.on("recieve_group", handleGetGroup);
       setShowLoading(true);
-      const res = await getAllGroup(userId);
+      console.log(userInfo);
+      const res = await getAllGroup(userId || userInfo?.userId);
       const { data, code } = res.data;
       setAllRoom(data);
       setShowLoading(false);
@@ -49,46 +54,38 @@ const LayoutChatRoom = () => {
     };
   }, [socket]);
 
-  useEffect(() => {
-    handleGetAllGroup();
-  }, []);
-
   const handleGetToken = async () => {
-    const postData = {
-      username,
-      password,
-    };
     try {
-      setShowLoading(true);
-      const res = await authUser(postData);
-      setShowLoading(false);
-      const roleId = jwt(res?.data?.data?.token);
-      console.log(roleId);
-      
+      sessionStorage?.setItem("token", token);
+      const userLogin = jwt(token);
+      const username =
+        userLogin["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"];
+      const userId =
+        userLogin[
+          "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
+        ];
       const getRole =
-        roleId["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
-      setUserRole(getRole);
-      const { status, data: userData } = res.data;
-      console.log(res);
-
-      if (status === "Success") {
-        sessionStorage.setItem("userId", userId);
-        sessionStorage.setItem("token", userData?.token);
-        sessionStorage.setItem("userName", username);
-        setGetUserId(userId);
-        handleAllUsers();
-      }
+        userLogin[
+          "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+        ];
+      setUserInfo({
+        username,
+        userId,
+        getRole,
+      });
+      handleGetAllGroup(userId);
     } catch (error) {
       console.error("Error during authentication:", error);
     }
   };
 
   const handleRoomClick = (newRoomId) => {
+    setGroupName(newRoomId?.room?.groupName);
     setRoomId(newRoomId?.room?.groupId || 0);
     navigate(
-      `/?username=${username}&password=${password}&userId=${userId}&roomId=${
-        newRoomId?.room?.groupId || 0
-      }`
+      `/?rmId=${newRoomId?.room?.groupId || 0}&tk=${sessionStorage?.getItem(
+        "token"
+      )}`
     );
   };
 
@@ -101,33 +98,33 @@ const LayoutChatRoom = () => {
       if (status == "Success") {
         setAllMemberGroup(data);
       }
+      const resAdminChat = await getAllAdminChat();
+      if (resAdminChat?.code === 0) {
+        setAllAdminChat(resAdminChat?.data);
+      }
     } catch (error) {
       console.log(error);
       setShowLoading(false);
     }
   };
 
-  const handleGetUserInfo = () => {
-    return setUserInfo({
-      username: username,
-      password: password,
-      userId: userId,
-    });
-  };
-
   useEffect(() => {
     handleGetToken();
-    handleGetUserInfo();
   }, []);
+
+  useEffect(() => {
+    handleGetAllGroup();
+    handleAllUsers();
+  }, [userInfo?.userId]);
 
   const handleProfile = () => {};
 
   return (
     <>
+      {showLoading && <Loading />}
       <div className="">
-        {showLoading && <Loading />}
         <p className="col-12 bg_rooms font15 fw-bold bg-white d-flex justify-content-between border-bottom border-1 px-3 py-3">
-          <span className="text-white">گروه عمومی</span>
+          <span className="text-white"> {groupName || "گروه عمومی"} </span>
           <span>
             <i
               onClick={handleProfile}
@@ -137,10 +134,7 @@ const LayoutChatRoom = () => {
         </p>
         <div className="d-flex row mx-1 pb-3">
           <ChatRoom
-            getUserId={getUserId}
-            username={username}
-            password={password}
-            userId={userId}
+            userInfo={userInfo}
             showLoading={showLoading}
             setShowLoading={setShowLoading}
             allMemberGroup={allMemberGroup}

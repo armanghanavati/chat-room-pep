@@ -4,8 +4,8 @@ import { DataSource } from "typeorm";
 import logger from "../../log/logger";
 
 export const postMessagesService = async (messageData: {
-  userId: number; // Changed to number to match the entity definition
-  userName: string;
+  userId: number;
+  username: string;
   title: string;
   recieverId: number[] | null;
   roomId: number;
@@ -20,12 +20,11 @@ export const postMessagesService = async (messageData: {
         messageData.recieverId.map(async (id) => {
           const newMessageData = {
             userId: messageData.userId,
-            userName: messageData.userName,
+            username: messageData.username,
             title: messageData.title,
             recieverId: id,
             roomId: messageData.roomId,
           };
-
           const newMessage = connectModel.create(newMessageData);
           await connectModel.save(newMessage);
 
@@ -36,7 +35,7 @@ export const postMessagesService = async (messageData: {
     } else {
       const newMessage = connectModel.create({
         userId: messageData.userId,
-        userName: messageData.userName,
+        username: messageData.username,
         title: messageData.title,
         recieverId: null,
         roomId: messageData.roomId,
@@ -79,21 +78,17 @@ export const getAllMessageService = async (payload: any) => {
   }
 };
 
-export const getMessagesService = async (userId: number, roomId: number) => {
+export const getMessagesService = async (userId: number | string, roomId: number) => {
   try {
     const connectedDB = await connection();
     const query = `
-     SELECT chat.title, chat.[time], chat.id, chat.recieverId, chat.userId , chat.userName, chat.roomId
+        SELECT distinct chat.title, chat.[time], chat.id, chat.recieverId, chat.userId , chat.username, chat.roomId
         FROM [messages] chat
         LEFT JOIN AspNetUsers us ON chat.userId = us.Id
         LEFT JOIN AspNetUserRoles userRole ON us.Id = userRole.UserId
-        WHERE (1 = IIF((userRole.RoleId = 1 AND us.Id = ${userId}), 1, 0)
-        OR (chat.userId = ${userId} OR chat.recieverId = ${userId})
+        where (chat.userId = ${userId} OR chat.recieverId = ${userId}
         OR chat.recieverId IS NULL)
-        AND chat.id IS NOT NULL
-        and roomId = ${roomId}
-      `;
-
+        and roomId = ${roomId}`;
     const messages = await connectedDB.query(query);
     return messages;
   } catch (error) {
@@ -109,12 +104,10 @@ export const postMessageWithUsersService = async (payload: any) => {
     ? payload.recieverId
     : null;
 
-  console.log("recieverIds recieverIds recieverIds", recieverIds, payload);
-
   if (recieverIds?.length === 0) {
     const newMessageData = {
       userId: payload.userId,
-      userName: payload.userName,
+      username: payload.username,
       title: payload.title,
       recieverId: null,
     };
@@ -130,7 +123,7 @@ export const postMessageWithUsersService = async (payload: any) => {
     recieverIds.map(async (ids: any) => {
       const newMessageData = {
         userId: payload.userId,
-        userName: payload.userName,
+        username: payload.username,
         title: payload.title,
         recieverId: ids !== undefined ? ids : null,
       };
@@ -153,7 +146,7 @@ export const postMessageWithUsersService = async (payload: any) => {
 
 //   const newMessage = connectedDB.getRepository(Messages).create({
 //     userId: payload.userId,
-//     userName: payload.userName,
+//     username: payload.username,
 //     title: payload.title,
 //     time: new Date(payload.time),
 //   });

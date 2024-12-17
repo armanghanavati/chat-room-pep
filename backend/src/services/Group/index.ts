@@ -20,7 +20,7 @@ export const postGroupMentionsService = async (payload: any) => {
             groupName: payload.groupName,
           };
 
-          console.log("Saving mention for groupId:", tempGroup); // برای دیباگ
+          console.log("Saving mention for groupId:", tempGroup);
 
           const response = getRepo.create(tempGroup);
           const savedResponse = await getRepo.save(response);
@@ -28,8 +28,8 @@ export const postGroupMentionsService = async (payload: any) => {
           return savedResponse;
         })
     );
+    return newGroupMentions;
 
-    return newGroupMentions; // بازگشت به تمام ذکرها
   } catch (error) {
     if (error instanceof QueryFailedError) {
       logger.error("Query Failed: " + error.message);

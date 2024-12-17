@@ -60,6 +60,7 @@ const AddRoom = ({
         classHeader="bg-primary text-white fw-bold"
         footerButtons={[
           <Button
+          className="w-25"
             text="Outlined"
             stylingMode="outlined"
             type="danger"
@@ -67,13 +68,14 @@ const AddRoom = ({
             label="لغو"
           />,
           <Button
+          className="w-25"
             onClick={handleAddGroup}
             type="outline-success"
             label="تایید"
           />,
         ]}
       >
-        <Row className="d-flex justify-content-center align-items-center">
+        <Row className="d-flex justify-content-center align-items-center mb-4">
           <Col xxl="12" className="my-4">
             <Form.Label> نام گروه: </Form.Label>
             <Form.Control

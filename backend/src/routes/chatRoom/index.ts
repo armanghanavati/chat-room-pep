@@ -9,12 +9,9 @@ import {
 const router = Router();
 
 // router.post("/uploader", uploadFile);
+// router.get("/getAllMessage/:roomId/:role", getAllMessages);
 router.post("/uploader", uploadFile);
-router.get("/getMessage/:userId/:roomId", getMessage);
-router.get("/getAllMessage/:roomId/:role", getAllMessages);
+router.get("/getMessage", getMessage);
 router.post("/msgWithUsers", postMessageWithUsers);
 
 export default router;
-
-
-

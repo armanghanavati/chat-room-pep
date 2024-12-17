@@ -15,7 +15,6 @@ const setupSocket = (server: any) => {
       methods: ["GET", "POST"],
     },
   });
-
   io.on("connection", (socket) => {
     try {
       socket.on("join_home", (userId) => {
@@ -44,13 +43,12 @@ const setupSocket = (server: any) => {
       });
 
       socket.on("send_message", async (msgData) => {
-        console.log("msgDataaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" ,msgData);
         const savedMessages = await postMessagesService(msgData);
         socket.broadcast.emit("receive_message", {
           id: savedMessages[0].id,
           userId: msgData.userId,
           time: msgData.time,
-          userName: msgData.userName,
+          username: msgData.username,
           message: msgData.title,
           recieverId: msgData.recieverId,
           roomId: Number(msgData.roomId),
@@ -59,14 +57,15 @@ const setupSocket = (server: any) => {
           id: savedMessages[0].id,
           userId: msgData.userId,
           time: msgData.time,
-          userName: msgData.userName,
+          username: msgData.username,
           message: msgData.title,
           recieverId: msgData.recieverId,
           roomId: Number(msgData.roomId),
         });
       });
-      socket.on("attach_file", (userId) => {
-        console.log(userId);
+      socket.on("attach_file", (data) => {
+        logger?.info("attach_file", data);
+        console.log("attach_file", data);
       });
     } catch (error) {
       console.error("Error sending message:", error.message);

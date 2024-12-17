@@ -411,3 +411,897 @@ where mentionMmr = NaN
   "error": "Failed to load user data",
   "code": 404
 }
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/24 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/25 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/25 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/25 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: Query:  
+SELECT * FROM [pepDB].[dbo].[group_mentions]
+where mentionMmr = NaN
+1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
+1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}
+1403/9/26 [error] [UserProfile]: {
+  "error": "Failed to load user data",
+  "code": 404
+}

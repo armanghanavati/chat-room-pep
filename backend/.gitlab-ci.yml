@@ -5,11 +5,11 @@ stages:
 
 variables:
    NODE_ENV: build
-   APP_DIR: "E:\\node-pub5"  # Change this to your app's path 1
+   APP_DIR: "E:\\node-pub9"  # Change this to your app's path 1
 
 variables:
   NODE_ENV: production
-  APP_DIR: "E:\\node-pub5"  # Change this to your app's path 1
+  APP_DIR: "E:\\node-pub9"  # Change this to your app's path 1
 
 # variables:
 #   NODE_ENV: "test"
@@ -52,6 +52,8 @@ deploy:
     - Copy-Item -Recurse -Path .\* -Destination $APP_DIR
     - cd $APP_DIR
     - npm install
+    - npm install typescript
+    - npm install jest
     - npm run build
     #- npm install pm2@latest -g
     #- pm2 start dist/index.js --name node

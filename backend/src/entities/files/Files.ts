@@ -1,7 +1,7 @@
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
-export default class Messages extends BaseEntity {
+export default class Files extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number | null;
 
@@ -12,8 +12,7 @@ export default class Messages extends BaseEntity {
   userId: string;
 
   @Column()
-  userName: string;
-
+  username: string;
   // @Column()
   // content: string;
 

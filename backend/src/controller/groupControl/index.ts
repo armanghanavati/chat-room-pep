@@ -27,9 +27,9 @@ export const postGroupMentions = asyncWrapper(
 
 export const getAllGroup = asyncWrapper(
   async (req: Request, res: Response): Promise<void> => {
-    const { id } = req.params;
-    const numbId = Number(id);
-    
+    const { userId } = req.query;
+    const numbId = Number(userId);
+
     const groups = await getAllGroupService(numbId);
     res.status(StatusCodes.OK).json({ data: groups, code: 0 });
   }

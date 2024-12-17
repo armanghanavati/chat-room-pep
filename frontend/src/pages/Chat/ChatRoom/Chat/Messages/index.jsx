@@ -1,9 +1,11 @@
 import React from "react";
 import StringHelpers from "../../../../../utils/StringHelpers";
 import { Col, Row } from "react-bootstrap";
+import { useMyContext } from "../../../../../context";
 
 const Messages = ({ messages, messagesEndRef }) => {
-  const numberUserId = Number(sessionStorage.getItem("userId"));
+  const { userInfo } = useMyContext();
+  const numberUserId = Number(userInfo?.userId);
 
   return (
     <>
@@ -19,17 +21,17 @@ const Messages = ({ messages, messagesEndRef }) => {
           >
             {numberUserId === numberServerUserId && (
               <span className="text-secondary fw-bold mx-1">
-                {msg?.userName}
+                {msg?.username}
               </span>
             )}
             {numberUserId === numberServerUserId && (
               <div
-                className="rounded_msg_send my-2 p-3"
+                className={`rounded_msg_send my-2 p-3 ${
+                  numberUserId === numberServerUserId
+                    ? "bg_chat_send"
+                    : "bg_chat_recive"
+                } `}
                 style={{
-                  backgroundColor:
-                    numberUserId === numberServerUserId
-                      ? "Lavender"
-                      : "lightblue",
                   maxWidth: "50%",
                   wordWrap: "break-word",
                 }}
@@ -55,12 +57,12 @@ const Messages = ({ messages, messagesEndRef }) => {
             )}
             {numberUserId !== numberServerUserId && (
               <div
-                className="rounded_msg_recieve  my-2 p-3"
+                className={`rounded_msg_recieve my-2 p-3 ${
+                  numberUserId === numberServerUserId
+                    ? "bg_chat_send"
+                    : "bg_chat_recive"
+                }`}
                 style={{
-                  backgroundColor:
-                    numberUserId === numberServerUserId
-                      ? "Lavender"
-                      : "lightblue",
                   maxWidth: "50%",
                   wordWrap: "break-word",
                 }}
@@ -74,7 +76,7 @@ const Messages = ({ messages, messagesEndRef }) => {
               <Col className="d-flex col-1 fw-thin font10 justify-content-center align-items-center text-secondary">
                 <Col xxl="10" className="gap-2">
                   <i className="bi bi-person-circle font35" />
-                  <span className="">{msg?.userName}</span>
+                  <span className="">{msg?.username}</span>
                 </Col>
               </Col>
             )}

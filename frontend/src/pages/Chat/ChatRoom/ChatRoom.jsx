@@ -1,17 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ChatMessage from "./Chat/ChatMessage";
-import { io } from "socket.io-client";
-import Room from "./Room";
-import { Col, Container } from "react-bootstrap";
-import {
-  allUsers,
-  authUser,
-  getMessageQuery,
-  getMessages,
-} from "../../../services/dotNet";
+import { getMessageQuery } from "../../../services/dotNet";
 import Loading from "../../../components/Loading";
-import jwt from "jwt-decode";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { useMyContext } from "../../../context";
 
 const ChatRoom = ({
@@ -20,23 +10,15 @@ const ChatRoom = ({
   allMemberGroup,
   setAllMemberGroup,
   socket,
-  getUserId,
+  userInfo,
 }) => {
-  let tempAdminRole = false;
-  const { setUserRole, roomId, userRole } = useMyContext();
+  const { roomId } = useMyContext();
   const [messages, setMessages] = useState(null);
-  // const validateCredentials = () => {
-  //   if (username && password) {
-  //     handleGetToken({ username, password });
-  //     fetchChatHistory();
-  //   } else {
-  //     alert("اطلاعات ورودی نادرست است");
-  //   }
-  // };
 
   const fetchChatHistory = async () => {
     try {
-      const res = await getMessageQuery(getUserId, roomId);
+      console.log(userInfo?.userId, roomId);
+      const res = await getMessageQuery(userInfo?.userId, roomId);
       console.log(res);
       setMessages(res?.data?.data);
     } catch (error) {
@@ -46,29 +28,34 @@ const ChatRoom = ({
 
   useEffect(() => {
     fetchChatHistory();
-    if (getUserId) {
-      socket.emit("join_home", getUserId);
+    if (userInfo?.userId) {
+      socket.emit("join_home", userInfo?.userId);
     }
 
     return () => {
       socket.off("update_online_users");
       socket.disconnect();
     };
-  }, [roomId]);
+  }, [roomId, userInfo?.userId]);
 
   return (
     <>
       {showLoading && <Loading />}
       <div className="col-xxl-9 col-xs-12">
-        <ChatMessage
-          allMemberGroup={allMemberGroup}
-          setAllMemberGroup={setAllMemberGroup}
-          showLoading={showLoading}
-          setShowLoading={setShowLoading}
-          socket={socket}
-          messages={messages}
-          setMessages={setMessages}
-        />
+        {roomId !== null ? (
+          <ChatMessage
+            userInfo={userInfo}
+            allMemberGroup={allMemberGroup}
+            setAllMemberGroup={setAllMemberGroup}
+            showLoading={showLoading}
+            setShowLoading={setShowLoading}
+            socket={socket}
+            messages={messages}
+            setMessages={setMessages}
+          />
+        ) : (
+          <div></div>
+        )}
       </div>
     </>
   );

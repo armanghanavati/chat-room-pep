@@ -2,23 +2,24 @@ import { StatusCodes } from "http-status-codes";
 import eventEmitter from "../../middleware/event/eventEmmiter";
 import { Request, Response } from "express";
 import {
+  getAllAdminChatService,
   getTokenPepService,
   postTokenService,
 } from "../../services/LoginService";
 
 const postToken = async (req: Request, res: Response): Promise<any> => {
-  const { token, userId, userName, userRole } = req.body;
+  const { token, userId, username, userRole } = req.body;
 
   const loginData = await postTokenService({
     token,
     userId,
-    userName,
+    username,
     userRole,
   });
 
   await eventEmitter.emit("loginData", { ...req.body });
 
-  if (!token || !userId || !userName) {
+  if (!token || !userId || !username) {
     return res
       .status(StatusCodes.BAD_REQUEST)
       .json({ msg: "یکی از فیلد های مورد نظر ارسال نشده" });
@@ -47,6 +48,7 @@ const getTokenPep = async (req: Request, res: Response): Promise<any> => {
   //   clearTimeout(timeout);
   //   eventEmitter.removeListener("loginData", dataListener);
   // });
+
   const { userId } = req.params;
   try {
     const userInfo = await getTokenPepService(userId);
@@ -64,4 +66,10 @@ const getTokenPep = async (req: Request, res: Response): Promise<any> => {
   }
 };
 
-export { postToken, getTokenPep };
+const getAllAdminChat = async (req: Request, res: Response): Promise<void> => {
+  const adminChat = await getAllAdminChatService();
+  console.log(adminChat);
+  res.status(StatusCodes.OK).json({ data: adminChat, code: 0 });
+};
+
+export { postToken, getTokenPep, getAllAdminChat };

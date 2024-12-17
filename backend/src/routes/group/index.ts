@@ -4,6 +4,6 @@ import { postGroupMentions, getAllGroup } from "../../controller/groupControl";
 const router = Router();
 
 router.post("/postGroupMentions", postGroupMentions);
-router.get("/getAllGroup/:id", getAllGroup);
+router.get("/getAllGroup", getAllGroup);
 
 export default router;

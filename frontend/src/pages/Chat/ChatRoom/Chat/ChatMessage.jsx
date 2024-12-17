@@ -17,13 +17,14 @@ import { useMyContext } from "../../../../context";
 import { attachFile } from "../../../../services/dotNet";
 
 const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
-  const { userRole, roomId } = useMyContext();
+  const { roomId, allAdminChat, userInfo } = useMyContext();
   const { id } = useParams();
-  const userId = sessionStorage.getItem("userId");
-  const userName = sessionStorage.getItem("userName");
+  const fixForRole = userInfo?.userRole?.toString();
+  const findAdmin = fixForRole?.includes("chatAdmin");
   const messagesEndRef = useRef(null);
   const hiddenFileInput = useRef(null);
   const titleInputRef = useRef(null);
+  const loopAdminChat = allAdminChat?.map((item) => item.UserId);
 
   const [uploadedFiles, setUploadedFiles] = useState([]);
   const [showLoading, setShowLoading] = useState(false);
@@ -31,21 +32,18 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
   const [selectedUserMention, setSelectedUserMention] = useState([]);
   const [getUserMention, setGetUserMention] = useState([]);
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    messagesEndRef?.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleReceiveMessage = (data) => {
-    const fixUserId = Number(userId);
+    console.log(data);
+
+    const fixUserId = Number(userInfo?.userId);
     const fixServerUserId = Number(data?.userId);
     const mapRecieverIds =
       data?.recieverId !== null ? data?.recieverId?.map((ids) => ids) : [];
-    const fixIncloudes = mapRecieverIds.some((item) => item === fixUserId);
-    console.log(
-      "data",
-      data,
-      "fixIncloudes ",
-      mapRecieverIds,
-      data?.recieverId?.length
+    const fixIncloudes = mapRecieverIds.some(
+      (item) => item === fixServerUserId
     );
 
     if (roomId !== 0) {
@@ -54,26 +52,21 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
         {
           title: data?.message,
           userId: data?.userId,
-          userName: data?.userName,
+          username: data?.username,
           time: data?.time,
           recieverId: data?.recieverId,
           roomId: data?.roomId,
         },
       ]);
-    } else if (
-      data.roomId === roomId &&
-      (fixUserId === fixServerUserId ||
-        fixIncloudes ||
-        data?.recieverId?.length === 0)
-    ) {
+    } else if (fixUserId === fixServerUserId || findAdmin || fixIncloudes) {
       setMessages((prev) => [
         ...prev,
         {
           title: data?.message,
           userId: data?.userId,
-          userName: data?.userName,
+          username: data?.username,
           time: data?.time,
-          recieverId: data?.recieverId,
+          recieverId: loopAdminChat,
           roomId: data?.roomId,
         },
       ]);
@@ -86,6 +79,7 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
     // socket.on("update_online_users", (data) => {
     //   setOnlineUsers(data);
     // });
+
     scrollToBottom();
     return () => {
       socket.off("receive_message", handleReceiveMessage);
@@ -93,32 +87,31 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
     };
   }, [
     socket,
+    messages,
     id, // setOnlineUsers
   ]);
 
   const handleSendMessage = () => {
     const date = new Date().toString();
     const timeString = date.split(" ")[4];
-    const fixForRole = userRole?.toString();
-    // const findAdmin = fixForRole?.includes("chatAdmin");
 
     if (title) {
       if (roomId !== 0) {
         socket.emit("send_message", {
           title: title,
           recieverId: null,
-          userName: userName,
+          username: userInfo?.username,
           time: timeString,
-          userId: userId,
+          userId: userInfo?.userId,
           roomId: roomId,
         });
       } else {
         socket.emit("send_message", {
           title: title,
-          recieverId: [sessionStorage.getItem("userId")],
-          userName: userName,
+          recieverId: loopAdminChat,
+          username: userInfo?.username,
           time: timeString,
-          userId: userId,
+          userId: userInfo?.userId,
           roomId: roomId,
         });
       }
@@ -130,15 +123,16 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
   const handleFileSend = async (e) => {
     try {
       const file = e.target.files[0];
-      if (file) {
-        const formData = new FormData();
-        formData.append("file", file);
-        socket.emit("attach_file", {
-          userId,
-        });
-        const res = await attachFile(formData);
-        setUploadedFiles((prevFiles) => [...prevFiles, file]);
-      }
+      console.log(e, file);
+      const formData = new FormData();
+      formData.append("file", file);
+      console.log(formData);
+      const res = await attachFile(formData);
+      // if (res?.data?.code === 0) {
+      //   console.log(formData);
+      //   socket.emit("attach_file", { userId: userInfo?.userId });
+      //   setUploadedFiles((prevFiles) => [...prevFiles, file]);
+      // }
     } catch (error) {
       console.error("Error uploading file:", error);
     }
@@ -197,14 +191,14 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
   return (
     <div className="d-flex row ">
       {showLoading && <Loading />}
-      <div className=" mt-2 container-fluid">
+      <div className=" mt-2 container-fluid ">
         <Col className="bg-white h_messages shadow rounded-top-2">
           <div
             className="d-flex m-1 bg-white justify-content-center p-2"
             style={{ flexDirection: "column", display: "flex" }}
           >
             <Messages messages={messages} messagesEndRef={messagesEndRef} />
-            <div className="mt-2">
+            <div messagesEndRef={messagesEndRef} className="mt-2">
               {uploadedFiles?.map((file, index) => (
                 <div key={index} className="file-preview">
                   {renderFilePreview(file)}
@@ -226,7 +220,7 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
               onClick={handleSendMessage}
               className="cursorPointer font25 mt-4 text-primary font25 d-flex align-items-center bi bi-send"
             />
-            {userId === "39" && (
+            {/* {userId === "39" && (
               <SelectMultiTable
                 xxl={2}
                 xl={2}
@@ -237,7 +231,7 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
                 submit={() => setGetUserMention(selectedUserMention)}
                 allListRF={allMemberGroup}
               />
-            )}
+            )} */}
             <div className="">
               <i
                 onClick={() => hiddenFileInput.current.click()}
@@ -252,7 +246,6 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
             </div>
             <Col className="mt-3" xs="8" md="8" xl="8">
               <Form.Control
-                // onKeyPress={handleKeyPress}
                 onKeyDown={handleKeyPress}
                 xxl={10}
                 xl={10}

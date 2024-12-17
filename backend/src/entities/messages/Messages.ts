@@ -18,7 +18,7 @@ export class Messages extends BaseEntity {
   userId: number;
 
   @Column()
-  userName: string;
+  username: string;
 
   @Column("int", { nullable: true })
   recieverId: number | null;

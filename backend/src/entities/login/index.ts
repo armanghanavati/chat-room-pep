@@ -1,6 +1,6 @@
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("login_info")
+@Entity()
 export class LoginInfo extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
@@ -12,7 +12,7 @@ export class LoginInfo extends BaseEntity {
   userId: string;
 
   @Column()
-  userName: string;
+  username: string;
 
   @Column({ nullable: true })
   userRole: string;

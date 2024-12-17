@@ -3,21 +3,21 @@ import { createContext, useContext, useState } from "react";
 const MyContext = createContext();
 export const MyProvider = ({ children }) => {
   const [userInfo, setUserInfo] = useState({});
-  const [userRole, setUserRole] = useState({});
   const [showToast, setShowToast] = useState({});
-  const [roomId, setRoomId] = useState("");
+  const [roomId, setRoomId] = useState(null);
+  const [allAdminChat, setAllAdminChat] = useState([]);
 
   return (
     <MyContext.Provider
       value={{
         userInfo,
         setUserInfo,
-        userRole,
-        setUserRole,
         showToast,
         setShowToast,
         roomId,
         setRoomId,
+        allAdminChat,
+        setAllAdminChat,
       }}
     >
       {children}
