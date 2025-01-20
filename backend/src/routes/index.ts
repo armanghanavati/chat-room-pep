@@ -9,6 +9,7 @@ const getAllRouter = () => {
   router.use("/group", group);
   router.use("/chatRoom", chatRoom);
   router.use("/login", loginData);
+  
   return router;
 };
 

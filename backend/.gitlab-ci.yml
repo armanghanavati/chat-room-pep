@@ -5,11 +5,11 @@ stages:
 
 variables:
    NODE_ENV: build
-   APP_DIR: "E:\\node-pub9"  # Change this to your app's path 1
+   APP_DIR: "E:\\node-pub10"  # Change this to your app's path 1
 
 variables:
   NODE_ENV: production
-  APP_DIR: "E:\\node-pub9"  # Change this to your app's path 1
+  APP_DIR: "E:\\node-pub10"  # Change this to your app's path 1
 
 # variables:
 #   NODE_ENV: "test"

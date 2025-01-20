@@ -1,0 +1,196 @@
+1403/10/12 ۱۰:۰۷:۲۴ [[32MINFO[39M] [undefined]: [32mserver is running:[39m 
+1403/10/12 ۱۰:۰۷:۳۲ [[32MINFO[39M] [undefined]: [32mserver is running:[39m 
+1403/10/12 ۱۰:۰۷:۵۳ [[32MINFO[39M] [undefined]: [32mserver is running:[39m 
+1403/10/12 ۱۰:۰۹:۳۵ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۰۹:۳۵ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۰۹:۳۵ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۰۹:۳۵ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۰۹:۳۵ [[32MINFO[39M] [undefined]: [32mupdate_online_users[39m {"0":"6379"}
+1403/10/12 ۱۰:۰۹:۳۵ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۰۹:۳۵ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۰۹:۳۵ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۰۹:۳۵ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۰۹:۳۷ [[32MINFO[39M] [undefined]: [32mUser joined room 0[39m 
+1403/10/12 ۱۰:۰۹:۳۷ [[32MINFO[39M] [undefined]: [32mupdate_online_users[39m {"0":"6379"}
+1403/10/12 ۱۰:۰۹:۳۷ [[32MINFO[39M] [undefined]: [32mUser joined room 0[39m 
+1403/10/12 ۱۰:۰۹:۳۷ [[32MINFO[39M] [undefined]: [32mUser joined room 0[39m 
+1403/10/12 ۱۰:۱۰:۲۱ [[32MINFO[39M] [undefined]: [32mserver is running:[39m 
+1403/10/12 ۱۰:۱۲:۰۵ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۰۵ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۱۲:۰۵ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۱۲:۰۵ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۰۶ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۰۶ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۱۲:۰۶ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۱۲:۰۶ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۰۸ [[32MINFO[39M] [undefined]: [32mupdate_online_users[39m {"0":"6379"}
+1403/10/12 ۱۰:۱۲:۰۸ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۰۸ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۱۲:۰۸ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۱۲:۰۸ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۰۸ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۰۸ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۱۲:۰۸ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۱۲:۰۸ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۱۴ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۱۴ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۱۲:۱۴ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۱۲:۱۴ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۱۴ [[32MINFO[39M] [undefined]: [32mupdate_online_users[39m {"0":"6379"}
+1403/10/12 ۱۰:۱۲:۱۴ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۱۴ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۱۲:۱۴ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۱۲:۱۴ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۱۵ [[32MINFO[39M] [undefined]: [32mUser joined room 0[39m 
+1403/10/12 ۱۰:۱۲:۱۵ [[32MINFO[39M] [undefined]: [32mupdate_online_users[39m {"0":"6379"}
+1403/10/12 ۱۰:۱۲:۱۵ [[32MINFO[39M] [undefined]: [32mUser joined room 0[39m 
+1403/10/12 ۱۰:۱۲:۱۵ [[32MINFO[39M] [undefined]: [32mUser joined room 0[39m 
+1403/10/12 ۱۰:۱۲:۱۸ [[32MINFO[39M] [undefined]: [32m{[39m
+[32m  title: 'ss',[39m
+[32m  recieverId: [ 39 ],[39m
+[32m  username: 'ghanavatian.ro',[39m
+[32m  time: '10:12:18',[39m
+[32m  userId: '6379',[39m
+[32m  roomId: 0[39m
+[32m}[39m 
+1403/10/12 ۱۰:۱۲:۱۸ [[32MINFO[39M] [undefined]: [32mUser joined room 0[39m 
+1403/10/12 ۱۰:۱۲:۴۹ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۴۹ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۱۲:۴۹ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۱۲:۴۹ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۴۹ [[31MERROR[39M] [undefined]: [31mQuery Failed: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۴۹ [[31MERROR[39M] [undefined]: [31mQuery:  [39m
+[31mSELECT * FROM [pepDB].[dbo].[group_mentions][39m
+[31mwhere mentionMmr = NaN[39m 
+1403/10/12 ۱۰:۱۲:۴۹ [[31MERROR[39M] [undefined]: [31mCaaaaaaaatch Errrror . . .[39m {"error":{"query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","driverError":{"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"name":"RequestError","number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]},"code":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'NaN'.","serverName":"COAPPWEB","procName":"","lineNumber":3}},"number":207,"lineNumber":3,"state":1,"class":16,"serverName":"COAPPWEB","procName":"","precedingErrors":[]}}
+1403/10/12 ۱۰:۱۲:۴۹ [[31MERROR[39M] [undefined]: [31mUnexpected error occurred: Error: Invalid column name 'NaN'.[39m 
+1403/10/12 ۱۰:۱۲:۴۹ [[32MINFO[39M] [undefined]: [32mupdate_online_users[39m {"0":"6379"}
+1403/10/12 ۱۲:۱۱:۵۳ [[32MINFO[39M] [undefined]: [32m{[39m
+[32m  '': [[39m
+[32m    PersistentFile {[39m
+[32m      _events: [Object: null prototype],[39m
+[32m      _eventsCount: 1,[39m
+[32m      _maxListeners: undefined,[39m
+[32m      lastModifiedDate: 2025-01-01T08:41:53.473Z,[39m
+[32m      filepath: 'D:\\rouzbeh.gh\\chatRoom\\backend\\src\\controller\\messages\\testUpload\\f1f8a5d85ca069310c30c7700.png',[39m
+[32m      newFilename: 'f1f8a5d85ca069310c30c7700.png',[39m
+[32m      originalFilename: 'Screenshot 2024-12-04 111249.png',[39m
+[32m      mimetype: 'image/png',[39m
+[32m      hashAlgorithm: false,[39m
+[32m      size: 68886,[39m
+[32m      _writeStream: [WriteStream],[39m
+[32m      hash: null,[39m
+[32m      [Symbol(shapeMode)]: false,[39m
+[32m      [Symbol(kCapture)]: false[39m
+[32m    },[39m
+[32m    PersistentFile {[39m
+[32m      _events: [Object: null prototype],[39m
+[32m      _eventsCount: 1,[39m
+[32m      _maxListeners: undefined,[39m
+[32m      lastModifiedDate: 2025-01-01T08:41:53.475Z,[39m
+[32m      filepath: 'D:\\rouzbeh.gh\\chatRoom\\backend\\src\\controller\\messages\\testUpload\\f1f8a5d85ca069310c30c7701.png',[39m
+[32m      newFilename: 'f1f8a5d85ca069310c30c7701.png',[39m
+[32m      originalFilename: 'Screenshot 2024-12-04 111249.png',[39m
+[32m      mimetype: 'image/png',[39m
+[32m      hashAlgorithm: false,[39m
+[32m      size: 68886,[39m
+[32m      _writeStream: [WriteStream],[39m
+[32m      hash: null,[39m
+[32m      [Symbol(shapeMode)]: false,[39m
+[32m      [Symbol(kCapture)]: false[39m
+[32m    }[39m
+[32m  ][39m
+[32m}[39m 
+1403/10/12 ۱۲:۱۱:۵۳ [[32MINFO[39M] [undefined]: [32muploadedFile[39m 
+1403/10/12 ۱۲:۱۲:۳۳ [[32MINFO[39M] [undefined]: [32m{[39m
+[32m  '': [[39m
+[32m    PersistentFile {[39m
+[32m      _events: [Object: null prototype],[39m
+[32m      _eventsCount: 1,[39m
+[32m      _maxListeners: undefined,[39m
+[32m      lastModifiedDate: 2025-01-01T08:42:33.153Z,[39m
+[32m      filepath: 'D:\\rouzbeh.gh\\chatRoom\\backend\\src\\controller\\messages\\testUpload\\f1f8a5d85ca069310c30c7702.png',[39m
+[32m      newFilename: 'f1f8a5d85ca069310c30c7702.png',[39m
+[32m      originalFilename: 'Screenshot 2024-12-04 111249.png',[39m
+[32m      mimetype: 'image/png',[39m
+[32m      hashAlgorithm: false,[39m
+[32m      size: 68886,[39m
+[32m      _writeStream: [WriteStream],[39m
+[32m      hash: null,[39m
+[32m      [Symbol(shapeMode)]: false,[39m
+[32m      [Symbol(kCapture)]: false[39m
+[32m    },[39m
+[32m    PersistentFile {[39m
+[32m      _events: [Object: null prototype],[39m
+[32m      _eventsCount: 1,[39m
+[32m      _maxListeners: undefined,[39m
+[32m      lastModifiedDate: 2025-01-01T08:42:33.154Z,[39m
+[32m      filepath: 'D:\\rouzbeh.gh\\chatRoom\\backend\\src\\controller\\messages\\testUpload\\f1f8a5d85ca069310c30c7703.png',[39m
+[32m      newFilename: 'f1f8a5d85ca069310c30c7703.png',[39m
+[32m      originalFilename: 'Screenshot 2024-12-04 111249.png',[39m
+[32m      mimetype: 'image/png',[39m
+[32m      hashAlgorithm: false,[39m
+[32m      size: 68886,[39m
+[32m      _writeStream: [WriteStream],[39m
+[32m      hash: null,[39m
+[32m      [Symbol(shapeMode)]: false,[39m
+[32m      [Symbol(kCapture)]: false[39m
+[32m    }[39m
+[32m  ][39m
+[32m}[39m 
+1403/10/12 ۱۲:۱۲:۳۳ [[32MINFO[39M] [undefined]: [32muploadedFile[39m 
+1403/10/12 ۱۲:۱۳:۰۱ [[32MINFO[39M] [undefined]: [32m{[39m
+[32m  '': [[39m
+[32m    PersistentFile {[39m
+[32m      _events: [Object: null prototype],[39m
+[32m      _eventsCount: 1,[39m
+[32m      _maxListeners: undefined,[39m
+[32m      lastModifiedDate: 2025-01-01T08:43:01.183Z,[39m
+[32m      filepath: 'D:\\rouzbeh.gh\\chatRoom\\backend\\src\\controller\\messages\\testUpload\\f1f8a5d85ca069310c30c7704.png',[39m
+[32m      newFilename: 'f1f8a5d85ca069310c30c7704.png',[39m
+[32m      originalFilename: 'Screenshot 2024-12-04 111249.png',[39m
+[32m      mimetype: 'image/png',[39m
+[32m      hashAlgorithm: false,[39m
+[32m      size: 68886,[39m
+[32m      _writeStream: [WriteStream],[39m
+[32m      hash: null,[39m
+[32m      [Symbol(shapeMode)]: false,[39m
+[32m      [Symbol(kCapture)]: false[39m
+[32m    },[39m
+[32m    PersistentFile {[39m
+[32m      _events: [Object: null prototype],[39m
+[32m      _eventsCount: 1,[39m
+[32m      _maxListeners: undefined,[39m
+[32m      lastModifiedDate: 2025-01-01T08:43:01.185Z,[39m
+[32m      filepath: 'D:\\rouzbeh.gh\\chatRoom\\backend\\src\\controller\\messages\\testUpload\\f1f8a5d85ca069310c30c7705.png',[39m
+[32m      newFilename: 'f1f8a5d85ca069310c30c7705.png',[39m
+[32m      originalFilename: 'Screenshot 2024-12-04 111249.png',[39m
+[32m      mimetype: 'image/png',[39m
+[32m      hashAlgorithm: false,[39m
+[32m      size: 68886,[39m
+[32m      _writeStream: [WriteStream],[39m
+[32m      hash: null,[39m
+[32m      [Symbol(shapeMode)]: false,[39m
+[32m      [Symbol(kCapture)]: false[39m
+[32m    }[39m
+[32m  ][39m
+[32m}[39m 
+1403/10/12 ۱۲:۱۳:۰۱ [[32MINFO[39M] [undefined]: [32muploadedFile[39m 

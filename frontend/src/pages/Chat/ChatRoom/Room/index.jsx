@@ -17,6 +17,7 @@ const Room = ({
   isEditRoom,
 }) => {
   const [showRoom, setShowRoom] = useState(false);
+  const [msgNutif, setMsgNutif] = useState(0);
 
   return (
     <>
@@ -36,9 +37,20 @@ const Room = ({
             <div className="d-flex row">
               <div
                 onClick={() => handleRoomClick({ room: 0 })}
-                className="col-xxl-12 hover bg-primary text-white col-xl-12 col-12 d-flex cursorPointer none_hover justify-content-center rounded-2 mb-3 p-3"
+                className="col-xxl-12 hover bg-primary text-white col-xl-12 col-12 d-flex cursorPointer none_hover rounded-2 mb-3 p-3"
               >
-                گپ عمومی
+                {false ? (
+                  <div className="col-2 d-flex  ">
+                    <span className="text-danger d-flex align-items-center px-2 rounded-pill border">
+                      {msgNutif}
+                    </span>
+                  </div>
+                ) : (
+                  <div className="col-2"> </div>
+                )}
+                <span className="col-8 d-flex justify-content-center">
+                  گپ عمومی
+                </span>
               </div>
             </div>
             {allRoom?.length &&
@@ -47,11 +59,21 @@ const Room = ({
                   <div className="d-flex row">
                     <div
                       onClick={() => handleRoomClick({ room: room })}
-                      className="d-flex col-xxl-12 hover text-white col-xl-12 col-12 d-flex cursorPointer justify-content-around border rounded-2 mb-3 p-3"
+                      className="d-flex col-xxl-12 hover text-white col-xl-12 col-12 d-flex cursorPointer border rounded-2 mb-3 p-3"
                     >
-                      <span></span>
-                      <span>{room?.groupName}</span>
-                      <span>
+                      {false ? (
+                        <div className="col-2 d-flex  ">
+                          <span className="text-danger d-flex align-items-center px-2 rounded-pill border">
+                            {msgNutif}
+                          </span>
+                        </div>
+                      ) : (
+                        <div className="col-2"> </div>
+                      )}
+                      <span className="col-8 d-flex justify-content-center ">
+                        {room?.groupName}
+                      </span>
+                      <span className="d-flex justify-content-end col-2">
                         <i className="font20 bi bi-three-dots-vertical" />
                       </span>
                     </div>

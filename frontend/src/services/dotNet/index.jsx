@@ -51,11 +51,29 @@ export const getAllGroup = async (userId) => {
   return response;
 };
 
-export const attachFile = async (formData) => {
-  const response = await axios.post(
-    `${nodeIp}/api/chatRoom/uploader`,
-    formData,
-    { headers: { "Content-Type": "multipart/form-data" } }
-  );
-  return response;
-};
+// export const attachFile = async (formData) => {
+//   const response = await axios.post(
+//     `${nodeIp}/api/chatRoom/uploader`,
+//     formData,
+//     { headers: { "Content-Type": "multipart/form-data" } }
+//   );
+//   return response;
+// };
+
+export async function UploadFiles(postData) {
+  const url = `${nodeIp}/api/chatRoom/uploader`;
+  const response = await fetch(url, {
+    method: "POST",
+    body: postData,
+    headers: {
+      Authorization: `Bearer ${sessionStorage?.getItem("token")}`,
+    },
+  });
+  const result = await response.json();
+  console.log("result", result);
+  if (result.status == "Success") {
+    console.log("New Ticket Insert" + JSON.stringify(result.data));
+    return result.data;
+  }
+  return null;
+}

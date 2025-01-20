@@ -3,7 +3,7 @@ import { StatusCodes } from "http-status-codes";
 import { postGroupService } from "../../services/Group";
 import { EditGroupSchema } from "../groupControl/groupValid";
 import { date } from "zod";
-import { group } from "console";
+import { group, log } from "console";
 import formidable from "formidable";
 import path from "path";
 import fs from "fs";
@@ -11,44 +11,68 @@ import {
   getAllMessageService,
   getMessagesService,
   postMessageWithUsersService,
+  uploadFileService,
 } from "../../services/Chats";
-import asyncWrapper from "../../middleware/asyncWrapper";
-import logger from "../../log/logger";
 
 const uploadsDir = path.join(__dirname, "testUpload");
 if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir);
 }
 
-const uploadFile = async (req: Request, res: Response) => {
+const uploadFile = async (req: Request, res: Response): Promise<any> => {
   try {
     const form = formidable({
       uploadDir: uploadsDir,
       keepExtensions: true,
       maxFields: 5,
       maxFieldsSize: 100 * 1024 * 1024,
+      multiples: false,
     });
+    const parseFormPromise = () => {
+      return new Promise((resolve, reject) => {
+        form.parse(req, (err, fields, files) => {
+          if (err) {
+            return reject(err);
+          }
+          if (err) {
+            return res.status(400).json({ error: err.message });
+          }
+          resolve({ fields, files });
+        });
+      });
+    };
 
-    console.log(form);
+    const { fields, files }: any = await parseFormPromise();
+    console.log(
+      "fields, filesfields, filesfields, filesfields, files",
+      fields,
+      files
+    );
 
-    form.parse(req, (err, fields, files): any => {
-      if (err) {
-        return res.status(400).json({ error: err.message });
-      }
-      console.log("fields", fields);
+    const getFormFile = files?.formFile;
+    const uploadedFileKeys = Object.keys(files);
 
-      // const fileData = {
-      //   userId: fields.userId, // اطمینان حاصل کنید که userId را از کلاینت دریافت می‌کنید
-      //   filePath: files.file.filepath, // تغییر دهد بر اساس نام کلید خود در فایل آپلود شده
-      //   fileName: files.file.originalFilename, // تغییر بده برای نام اصلی فایل
-      // };
+    if (uploadedFileKeys.length === 0) {
+      return res.status(400).json({ error: "No file uploaded" });
+    }
+    const uploadedFileKey = uploadedFileKeys[0];
+    const uploadedFile = files[uploadedFileKey];
 
-      res.status(StatusCodes.ACCEPTED).json({
+    const payload = {
+      attachmentId: fields?.attachmentId[0],
+      attachmentType: fields?.attachmentType[0],
+      attachmentName: fields?.attachmentName[0],
+    };
+    console.log("payload", payload);
+    const allFiles: any = await uploadFileService(payload);
+    if (allFiles) {
+      return res.status(StatusCodes.ACCEPTED).json({
         message: "File uploaded successfully",
         files: files,
       });
-    });
+    }
   } catch (error) {
+    console.error("Error during file upload:", error);
     res.status(500).json({ msg: error });
   }
 };

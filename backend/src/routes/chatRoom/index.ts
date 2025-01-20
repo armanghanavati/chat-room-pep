@@ -7,7 +7,6 @@ import {
 } from "../../controller/messages";
 
 const router = Router();
-
 // router.post("/uploader", uploadFile);
 // router.get("/getAllMessage/:roomId/:role", getAllMessages);
 router.post("/uploader", uploadFile);

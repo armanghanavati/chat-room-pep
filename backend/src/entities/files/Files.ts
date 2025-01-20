@@ -1,21 +1,25 @@
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
-export default class Files extends BaseEntity {
+export default class UploadFiles extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number | null;
 
-  @Column()
-  title: string;
+  @Column("int")
+  attachmentId: Number;
 
-  @Column()
-  userId: string;
+  @Column("char")
+  attachmentType: string;
 
-  @Column()
-  username: string;
-  // @Column()
-  // content: string;
+  @Column("char")
+  attachmentName: string;
 
-  @Column({ type: "datetime", default: () => "CURRENT_TIMESTAMP" })
-  time: Date;
+  @Column("char")
+  ext: string;
+
+  @Column("date")
+  insertDate: Date;
+
+  @Column("char")
+  fileName: String;
 }

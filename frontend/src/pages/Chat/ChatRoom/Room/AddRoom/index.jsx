@@ -60,7 +60,7 @@ const AddRoom = ({
         classHeader="bg-primary text-white fw-bold"
         footerButtons={[
           <Button
-          className="w-25"
+            className="w-25"
             text="Outlined"
             stylingMode="outlined"
             type="danger"
@@ -68,7 +68,7 @@ const AddRoom = ({
             label="لغو"
           />,
           <Button
-          className="w-25"
+            className="w-25"
             onClick={handleAddGroup}
             type="outline-success"
             label="تایید"

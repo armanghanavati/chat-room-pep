@@ -6,30 +6,34 @@ const jalaaliFormat = (componentName: any) => {
     const date = new Date(timestamp as string | number);
     const { jy, jm, jd } = toJalaali(date);
     const jalaaliDate = `${jy}/${jm}/${jd}`;
-
     const formattedMessage =
       typeof message === "object" ? JSON.stringify(message, null, 2) : message;
-
     return `${jalaaliDate} [${level}] [${componentName}]: ${formattedMessage}`;
   });
 };
 
-// تابعی برای ایجاد لاگر با نام کامپوننت
 const logger = (componentName: any) =>
   createLogger({
-    level: "info",
-    format: format.combine(format.timestamp(), jalaaliFormat(componentName)),
+    format: format.combine(
+      format.timestamp(),
+      format?.label({ label: "this is the label" }),
+      format.prettyPrint(),
+      // jalaaliFormat(componentName)
+    ),
     transports: [
-      new transports.Console(),
-      new transports.File({ filename: "error.log", level: "error" }),
+      new transports.Console({ level: "warn" }),
+      new transports.File({
+        filename: "error.log",
+        level: "error",
+        format: format.json(),
+      }),
       new transports.File({ filename: "combined.log" }),
+      new transports.Http({ level: "warn" }),
     ],
   });
 
-// صدا زدن لاگر در کامپوننت UserProfile
 const userProfileLogger = logger("UserProfile");
 
-// نمونه‌ای از لاگ‌گیری
 userProfileLogger.info("User profile loaded successfully.");
 userProfileLogger.warn("User profile is not complete.", { field: "address" });
 userProfileLogger.error({ error: "Failed to load user data", code: 404 });

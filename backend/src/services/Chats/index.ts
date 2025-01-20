@@ -78,7 +78,10 @@ export const getAllMessageService = async (payload: any) => {
   }
 };
 
-export const getMessagesService = async (userId: number | string, roomId: number) => {
+export const getMessagesService = async (
+  userId: number | string,
+  roomId: number
+) => {
   try {
     const connectedDB = await connection();
     const query = `
@@ -138,6 +141,10 @@ export const postMessageWithUsersService = async (payload: any) => {
   );
 
   return fixRecieverId;
+};
+
+export const uploadFileService = async (payload: any) => {
+  
 };
 // export const postMessageWithUsersService = async (payload: any) => {
 //   const connectedDB = await connection();

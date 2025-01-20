@@ -64,14 +64,15 @@ const LayoutChatRoom = () => {
         userLogin[
           "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
         ];
-      const getRole =
+      const userRole =
         userLogin[
           "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
         ];
+
       setUserInfo({
         username,
         userId,
-        getRole,
+        userRole,
       });
       handleGetAllGroup(userId);
     } catch (error) {

@@ -1,1307 +1,268 @@
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/18 [error]: Query: ALTER TABLE "messages" ADD "roomId" int NOT NULL
-1403/9/18 [error]: Caaaaaaaatch Errrror . . .
-1403/9/18 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'roomId' cannot be added to non-empty table 'messages' because it does not satisfy these conditions.
-1403/9/19 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'userRole' cannot be added to non-empty table 'login_info' because it does not satisfy these conditions.
-1403/9/19 [error]: Query: ALTER TABLE "login_info" ADD "userRole" nvarchar(255) NOT NULL
-1403/9/19 [error]: Caaaaaaaatch Errrror . . .
-1403/9/19 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'userRole' cannot be added to non-empty table 'login_info' because it does not satisfy these conditions.
-1403/9/19 [error]: Query Failed: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'userRole' cannot be added to non-empty table 'login_info' because it does not satisfy these conditions.
-1403/9/19 [error]: Query: ALTER TABLE "login_info" ADD "userRole" nvarchar(255) NOT NULL
-1403/9/19 [error]: Caaaaaaaatch Errrror . . .
-1403/9/19 [error]: Unexpected error occurred: Error: ALTER TABLE only allows columns to be added that can contain nulls, or have a DEFAULT definition specified, or the column being added is an identity or timestamp column, or alternatively if none of the previous conditions are satisfied the table must be empty to allow addition of this column. Column 'userRole' cannot be added to non-empty table 'login_info' because it does not satisfy these conditions.
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Converting circular structure to JSON
-    --> starting at object with constructor 'EntityMetadata'
-    |     property 'ownColumns' -> object with constructor 'Array'
-    |     index 0 -> object with constructor 'ColumnMetadata'
-    --- property 'entityMetadata' closes the circle
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Converting circular structure to JSON
-    --> starting at object with constructor 'EntityMetadata'
-    |     property 'ownColumns' -> object with constructor 'Array'
-    |     index 0 -> object with constructor 'ColumnMetadata'
-    --- property 'entityMetadata' closes the circle
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Cannot insert the value NULL into column 'groupId', table 'pepDB.dbo.group_mentions'; column does not allow nulls. INSERT fails.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/20 [error]: Caaaaaaaatch Errrror . . .
-1403/9/20 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/20 [error]: Unexpected Error: TypeError: Cannot read properties of undefined (reading 'map')
-1403/9/21 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/21 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/21 [error]: Caaaaaaaatch Errrror . . .
-1403/9/21 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/21 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/21 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/21 [error]: Caaaaaaaatch Errrror . . .
-1403/9/21 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/21 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/21 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/21 [error]: Caaaaaaaatch Errrror . . .
-1403/9/21 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/21 [error]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/21 [error]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/21 [error]: Caaaaaaaatch Errrror . . .
-1403/9/21 [error]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/21 [error]: Unexpected Error: TypeError: Cannot read properties of undefined (reading 'map')
-1403/9/21 [error]: Unexpected Error: TypeError: Cannot read properties of undefined (reading 'map')
-1403/9/21 [error]: Unexpected Error: TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/21 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/24 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/25 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/25 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/25 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query Failed: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: Query:  
-SELECT * FROM [pepDB].[dbo].[group_mentions]
-where mentionMmr = NaN
-1403/9/26 [error] [UserProfile]: Caaaaaaaatch Errrror . . .
-1403/9/26 [error] [UserProfile]: Unexpected error occurred: Error: Invalid column name 'NaN'.
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
-1403/9/26 [error] [UserProfile]: {
-  "error": "Failed to load user data",
-  "code": 404
-}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:13:42.736Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:13:49.398Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:13:55.952Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:13:55.954Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:13:55.955Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:13:55.965Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:13:55.978Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:13:55.979Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:13:55.981Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:13:55.988Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:20:19.874Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:20:23.214Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:20:23.216Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:20:23.218Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:20:23.240Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:20:23.247Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:20:23.248Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:20:23.249Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:20:23.256Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:22:39.599Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:22:46.180Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:22:46.182Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:22:46.183Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:22:46.199Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:22:46.214Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:22:46.215Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:22:46.217Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:22:46.224Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:23:42.054Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:23:42.900Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:23:42.902Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:23:42.903Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:23:42.917Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:23:43.212Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:23:43.213Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:23:43.214Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:23:43.221Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:23:51.099Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:23:51.101Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:23:51.102Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:23:51.113Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:23:51.129Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:23:51.130Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:23:51.131Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:23:51.138Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:24:06.839Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:24:17.474Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:24:29.701Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:24:37.421Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:24:58.815Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:04.791Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:25:04.794Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:25:04.797Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:04.814Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:04.917Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:25:04.920Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:25:04.921Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:04.934Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:12.726Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:25:12.728Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:25:12.729Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:12.738Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:12.840Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:25:12.842Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:25:12.843Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:12.851Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:22.938Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:25:22.941Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:25:22.942Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:22.950Z"}
+{"label":"info","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:23.032Z"}
+{"label":"info","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:25:23.036Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"info","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:25:23.037Z"}
+{"label":"info","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:25:23.044Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:28:10.575Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:28:50.218Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:28:58.229Z"}
+{"label":"info","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:29:30.543Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:31:09.548Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:31:20.703Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:31:20.704Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:31:20.706Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:31:20.720Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:31:20.894Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T08:31:20.896Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T08:31:20.897Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T08:31:20.904Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:40:24.086Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:40:36.842Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:40:51.750Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:40:59.523Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:42:29.187Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:43:56.315Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:44:05.193Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:44:49.633Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:45:57.345Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:47:03.249Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:48:10.030Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:48:58.737Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:53:10.180Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T08:55:08.285Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T09:39:09.372Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T09:39:14.137Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-01T09:39:27.058Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T09:45:31.714Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T09:45:31.717Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T09:45:31.720Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T09:45:31.728Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T09:45:31.775Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T09:45:31.778Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T09:45:31.779Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T09:45:31.789Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T09:52:53.825Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T09:52:53.826Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T09:52:53.828Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T09:52:53.835Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T09:52:53.967Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T09:52:53.969Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T09:52:53.970Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T09:52:53.978Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:25:54.029Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:25:54.032Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:25:54.043Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:25:54.055Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:25:54.057Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:25:54.061Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:25:54.063Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:25:54.073Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:29:25.665Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:29:25.667Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:29:25.669Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:29:25.676Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:29:25.719Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:29:25.720Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:29:25.721Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:29:25.728Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:29:40.086Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:29:40.087Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:29:40.089Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:29:40.097Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:29:40.101Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:29:40.105Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:29:40.106Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:29:40.114Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:31:07.736Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:31:07.737Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:31:07.738Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:31:07.746Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:31:07.790Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:31:07.793Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:31:07.794Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:31:07.802Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:32:00.424Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:32:00.426Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:32:00.427Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:32:00.433Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:32:00.446Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:32:00.447Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:32:00.448Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:32:00.455Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:32:33.137Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:32:33.139Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:32:33.140Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:32:33.147Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:32:33.149Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:32:33.150Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:32:33.151Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:32:33.158Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:40:30.339Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:40:30.340Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:40:30.341Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:40:30.366Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:40:30.385Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:40:30.387Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:40:30.388Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:40:30.394Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:52:41.465Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:52:41.467Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:52:41.468Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:52:41.474Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:52:41.508Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-01T10:52:41.509Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-01T10:52:41.510Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-01T10:52:41.516Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-02T10:18:13.349Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-02T10:18:24.040Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-02T10:19:08.571Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-02T10:44:15.317Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T07:39:21.939Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:39:27.983Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-04T07:39:27.985Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-04T07:39:28.009Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:39:28.020Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:39:28.028Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-04T07:39:28.029Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-04T07:39:28.030Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:39:28.038Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T07:47:39.624Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T07:49:56.249Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:51:48.133Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-04T07:51:48.134Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-04T07:51:48.136Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:51:48.148Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:51:48.152Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-04T07:51:48.154Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-04T07:51:48.156Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:51:48.167Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:53:51.617Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-04T07:53:51.619Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-04T07:53:51.620Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:53:51.628Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:53:51.679Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-04T07:53:51.680Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-04T07:53:51.681Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T07:53:51.689Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T07:55:54.285Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T07:56:40.341Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T07:57:02.185Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T07:58:20.241Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:17:19.005Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:18:22.302Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:19:13.982Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:19:34.655Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:19:55.278Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:20:05.630Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:20:30.506Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:20:55.296Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:24:12.239Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:24:19.598Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:24:28.654Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:24:49.982Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:25:33.947Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T08:28:29.918Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T09:41:00.236Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T09:43:24.881Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T09:46:12.966Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T09:46:32.258Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-04T09:46:32.259Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-04T09:46:32.260Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T09:46:32.278Z"}
+{"label":"this is the label","level":"error","message":"Query Failed: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T09:46:32.524Z"}
+{"label":"this is the label","level":"error","message":"Query:  \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","timestamp":"2025-01-04T09:46:32.525Z"}
+{"error":{"class":16,"code":"EREQUEST","driverError":{"class":16,"code":"EREQUEST","lineNumber":3,"name":"RequestError","number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","serverName":"COAPPWEB","state":1},"lineNumber":3,"number":207,"originalError":{"info":{"class":16,"handlerName":"onErrorMessage","lineNumber":3,"message":"Invalid column name 'NaN'.","name":"ERROR","number":207,"procName":"","serverName":"COAPPWEB","state":1}},"precedingErrors":[],"procName":"","query":" \nSELECT * FROM [pepDB].[dbo].[group_mentions]\nwhere mentionMmr = NaN","serverName":"COAPPWEB","state":1},"label":"this is the label","level":"error","message":"Caaaaaaaatch Errrror . . .","timestamp":"2025-01-04T09:46:32.526Z"}
+{"label":"this is the label","level":"error","message":"Unexpected error occurred: Error: Invalid column name 'NaN'.","timestamp":"2025-01-04T09:46:32.531Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T09:47:46.235Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T10:00:17.455Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T10:00:31.877Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-04T10:00:37.062Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:17:08.950Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:18:18.399Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:18:30.355Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:18:52.627Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:21:05.969Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:23:59.767Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:24:09.621Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:30:20.213Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:33:38.460Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:33:54.526Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-19T09:34:50.824Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-20T06:12:34.568Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-20T07:07:04.217Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-20T07:10:24.586Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-20T07:10:30.351Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-20T08:02:53.209Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-20T08:04:42.733Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-20T09:34:16.932Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-20T09:38:50.071Z"}
+{"label":"this is the label","level":"error","message":{"code":404,"error":"Failed to load user data"},"timestamp":"2025-01-20T09:39:43.378Z"}

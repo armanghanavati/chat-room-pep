@@ -23,7 +23,7 @@
       "*": ["*"] 
     },
     "noUnusedParameters": false,
-    "noImplicitReturns": true,
+    "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true
   },

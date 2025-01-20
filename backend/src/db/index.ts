@@ -3,6 +3,7 @@ import { DataSource, QueryFailedError } from "typeorm";
 import { Group } from "../entities/group";
 import { LoginInfo } from "../entities/login";
 import { GroupMentions } from "../entities/groupMentions";
+import UploadFiles from "../entities/files/Files";
 
 export const connection = async () => {
   const pool = new DataSource({
@@ -11,7 +12,7 @@ export const connection = async () => {
     username: "sa",
     password: "P@yv@nd123",
     database: "pepDB",
-    entities: [Messages, Group, LoginInfo, GroupMentions],
+    entities: [Messages, Group, LoginInfo, GroupMentions, UploadFiles],
     synchronize: true,
     options: {
       encrypt: true,

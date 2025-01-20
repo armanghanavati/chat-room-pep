@@ -14,19 +14,21 @@ import Messages from "./Messages";
 import SelectMultiTable from "../../../../components/SelectMultiTable";
 import Loading from "../../../../components/Loading";
 import { useMyContext } from "../../../../context";
-import { attachFile } from "../../../../services/dotNet";
+import { UploadFiles } from "../../../../services/dotNet";
 
 const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
   const { roomId, allAdminChat, userInfo } = useMyContext();
   const { id } = useParams();
   const fixForRole = userInfo?.userRole?.toString();
-  const findAdmin = fixForRole?.includes("chatAdmin");
+  const isAdmin = fixForRole?.includes("chatAdmin");
   const messagesEndRef = useRef(null);
   const hiddenFileInput = useRef(null);
   const titleInputRef = useRef(null);
   const loopAdminChat = allAdminChat?.map((item) => item.UserId);
 
   const [uploadedFiles, setUploadedFiles] = useState([]);
+  const [onlineUsers, setOnlineUsers] = useState([]);
+
   const [showLoading, setShowLoading] = useState(false);
   const [title, setTitle] = useState("");
   const [selectedUserMention, setSelectedUserMention] = useState([]);
@@ -35,50 +37,122 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
     messagesEndRef?.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleReceiveMessage = (data) => {
-    console.log(data);
+  // const handleReceiveMessage = (data) => {
+  //   console.log("data", data?.recieverId !== null, "roomId", roomId);
 
+  //   const fixUserId = Number(userInfo?.userId);
+  //   const fixServerUserId = Number(data?.userId);
+  //   const mapRecieverIds =
+  //     data?.recieverId !== null ? data?.recieverId?.map((ids) => ids) : [];
+  //   const fixIncloudes = mapRecieverIds.some(
+  //     (item) => item === fixServerUserId
+  //   );
+
+  //   if (roomId !== 0) {
+  //     if (roomId === data?.roomId) {
+  //       setMessages((prev) => [
+  //         ...prev,
+  //         {
+  //           title: data?.message,
+  //           userId: data?.userId,
+  //           username: data?.username,
+  //           time: data?.time,
+  //           recieverId: data?.recieverId,
+  //           roomId: data?.roomId,
+  //         },
+  //       ]);
+  //     }
+  //   } else if (roomId === 0) {
+  //     if (data?.recieverId === null && roomId === data?.roomId) {
+  //       setMessages((prev) => [
+  //         ...prev,
+  //         {
+  //           title: data?.message,
+  //           userId: data?.userId,
+  //           username: data?.username,
+  //           time: data?.time,
+  //           recieverId: loopAdminChat,
+  //           roomId: data?.roomId,
+  //         },
+  //       ]);
+  //     } else if (
+  //       fixUserId === fixServerUserId ||
+  //       (data?.recieverId !== null && findAdmin && roomId === data?.roomId)
+  //     ) {
+  //       setMessages((prev) => [
+  //         ...prev,
+  //         {
+  //           title: data?.message,
+  //           userId: data?.userId,
+  //           username: data?.username,
+  //           time: data?.time,
+  //           recieverId: loopAdminChat,
+  //           roomId: data?.roomId,
+  //         },
+  //       ]);
+  //     }
+  //   }
+  // };
+
+  const handleReceiveMessage = (data) => {
     const fixUserId = Number(userInfo?.userId);
     const fixServerUserId = Number(data?.userId);
-    const mapRecieverIds =
-      data?.recieverId !== null ? data?.recieverId?.map((ids) => ids) : [];
-    const fixIncloudes = mapRecieverIds.some(
-      (item) => item === fixServerUserId
-    );
+    const someReceive = data?.recieverId?.map((item) => item);
+    const getAllRecieve = someReceive?.some((item) => item === fixUserId);
 
     if (roomId !== 0) {
-      setMessages((prev) => [
-        ...prev,
-        {
-          title: data?.message,
-          userId: data?.userId,
-          username: data?.username,
-          time: data?.time,
-          recieverId: data?.recieverId,
-          roomId: data?.roomId,
-        },
-      ]);
-    } else if (fixUserId === fixServerUserId || findAdmin || fixIncloudes) {
-      setMessages((prev) => [
-        ...prev,
-        {
-          title: data?.message,
-          userId: data?.userId,
-          username: data?.username,
-          time: data?.time,
-          recieverId: loopAdminChat,
-          roomId: data?.roomId,
-        },
-      ]);
+      if (roomId === data?.roomId) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            title: data?.message,
+            userId: fixServerUserId,
+            username: data?.username,
+            time: data?.time,
+            recieverId: data?.recieverId,
+            roomId: data?.roomId,
+          },
+        ]);
+      }
+    } else if (roomId === 0) {
+      if (data?.recieverId === null && roomId === data?.roomId) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            title: data?.message,
+            userId: fixServerUserId,
+            username: data?.username,
+            time: data?.time,
+            recieverId: loopAdminChat,
+            roomId: data?.roomId,
+          },
+        ]);
+      } else if (
+        fixUserId === fixServerUserId ||
+        getAllRecieve ||
+        (data?.recieverId !== null && isAdmin && roomId === data?.roomId)
+      ) {
+        setMessages((prev) => [
+          ...prev,
+          {
+            title: data?.message,
+            userId: fixServerUserId,
+            username: data?.username,
+            time: data?.time,
+            recieverId: loopAdminChat,
+            roomId: data?.roomId,
+          },
+        ]);
+      }
     }
   };
 
   useEffect(() => {
     socket.emit("join_room_id", roomId);
     socket.on("receive_message", handleReceiveMessage);
-    // socket.on("update_online_users", (data) => {
-    //   setOnlineUsers(data);
-    // });
+    socket.on("update_online_users", (data) => {
+      setOnlineUsers(data);
+    });
 
     scrollToBottom();
     return () => {
@@ -91,15 +165,24 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
     id, // setOnlineUsers
   ]);
 
+  const handleCheckMsg = () => {
+    if (!isAdmin) {
+      return loopAdminChat;
+    } else {
+      return selectedUserMention || null;
+    }
+  };
+
   const handleSendMessage = () => {
     const date = new Date().toString();
     const timeString = date.split(" ")[4];
+    console.log(selectedUserMention);
 
     if (title) {
       if (roomId !== 0) {
         socket.emit("send_message", {
           title: title,
-          recieverId: null,
+          recieverId: selectedUserMention || null,
           username: userInfo?.username,
           time: timeString,
           userId: userInfo?.userId,
@@ -108,7 +191,7 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
       } else {
         socket.emit("send_message", {
           title: title,
-          recieverId: loopAdminChat,
+          recieverId: handleCheckMsg(),
           username: userInfo?.username,
           time: timeString,
           userId: userInfo?.userId,
@@ -121,18 +204,28 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
   };
 
   const handleFileSend = async (e) => {
+    var files = [];
+    for (let i = 0; i < e.target.files.length; i++) {
+      files.push(e.target.files[i]);
+    }
+    setUploadedFiles(files);
     try {
-      const file = e.target.files[0];
-      console.log(e, file);
+      // formData.append("userId", userInfo?.userId);
+
+      const dataPost = {
+        AttachedFile: files,
+        AttachmentId: 1,
+        AttachmentType: "msg",
+        AttachmentName: "chat",
+      };
       const formData = new FormData();
-      formData.append("file", file);
-      console.log(formData);
-      const res = await attachFile(formData);
-      // if (res?.data?.code === 0) {
-      //   console.log(formData);
-      //   socket.emit("attach_file", { userId: userInfo?.userId });
-      //   setUploadedFiles((prevFiles) => [...prevFiles, file]);
-      // }
+
+      const formFile = files[0];
+      formData.append("formFile", formFile);
+      formData.append("attachmentId", dataPost.AttachmentId);
+      formData.append("attachmentType", dataPost.AttachmentType);
+      formData.append("attachmentName", dataPost.AttachmentName);
+      const res = await UploadFiles(formData);
     } catch (error) {
       console.error("Error uploading file:", error);
     }
@@ -220,7 +313,7 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
               onClick={handleSendMessage}
               className="cursorPointer font25 mt-4 text-primary font25 d-flex align-items-center bi bi-send"
             />
-            {/* {userId === "39" && (
+            {isAdmin && (
               <SelectMultiTable
                 xxl={2}
                 xl={2}
@@ -231,7 +324,7 @@ const ChatMessage = ({ messages, setMessages, socket, allMemberGroup }) => {
                 submit={() => setGetUserMention(selectedUserMention)}
                 allListRF={allMemberGroup}
               />
-            )} */}
+            )}
             <div className="">
               <i
                 onClick={() => hiddenFileInput.current.click()}

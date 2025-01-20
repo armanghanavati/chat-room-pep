@@ -15,6 +15,7 @@ const setupSocket = (server: any) => {
       methods: ["GET", "POST"],
     },
   });
+
   io.on("connection", (socket) => {
     try {
       socket.on("join_home", (userId) => {
@@ -22,11 +23,12 @@ const setupSocket = (server: any) => {
           onlineUsers.push(userId);
         }
         io.emit("update_online_users", onlineUsers);
+        logger.info("update_online_users", onlineUsers);
 
         socket.on("disconnect", () => {
           onlineUsers = onlineUsers.filter((user: any) => user !== userId);
           io.emit("update_online_users", onlineUsers);
-          console.log("Online users:", onlineUsers);
+          console.log("offline users:", onlineUsers);
         });
       });
       socket.on("join_room_id", (roomId) => {
